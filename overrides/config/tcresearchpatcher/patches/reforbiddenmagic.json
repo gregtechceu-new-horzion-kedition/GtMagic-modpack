@@ -1,0 +1,367 @@
+[
+	{
+        "key": "MORPH_TOOLS",
+        "ops": [
+			{
+				"op": "replace",
+				"path": "location/0",
+				"value": "-4"
+			},
+			{
+				"op": "replace",
+				"path": "location/1",
+				"value": "5"
+			},
+			{
+				"op": "replace",
+				"path": "category",
+				"value": "INFUSION"
+			},
+			{
+				"op": "remove",
+				"path": "parents/2"
+			},
+            {
+				"op": "remove",
+				"path": "parents/1"
+			}
+        ]
+	},
+    {
+        "key": "PURESHOVEL",
+        "ops": [
+			{
+				"op": "replace",
+				"path": "location/0",
+				"value": "-5"
+			},
+			{
+				"op": "replace",
+				"path": "location/1",
+				"value": "7"
+			},
+			{
+				"op": "replace",
+				"path": "category",
+				"value": "INFUSION"
+			},
+			{
+				"op": "remove",
+				"path": "parents/2"
+			},
+			{
+				"op": "replace",
+				"path": "parents/0",
+				"value": "MORPH_TOOLS"
+			},
+			{
+				"op": "add",
+				"path": "meta",
+				"value": ["REVERSE"]
+			}
+        ]
+	},
+    {
+        "key": "DISTORTION_PICK",
+        "ops": [
+			{
+				"op": "replace",
+				"path": "location/0",
+				"value": "-6"
+			},
+			{
+				"op": "replace",
+				"path": "location/1",
+				"value": "9"
+			},
+			{
+				"op": "replace",
+				"path": "category",
+				"value": "INFUSION"
+			},
+			{
+				"op": "remove",
+				"path": "parents/0"
+			},
+			{
+				"op": "add",
+				"path": "meta",
+				"value": ["REVERSE"]
+			}
+        ]
+	},
+    {
+        "key": "SKULLAXE",
+        "ops": [
+			{
+				"op": "replace",
+				"path": "location/0",
+				"value": "-3"
+			},
+			{
+				"op": "replace",
+				"path": "location/1",
+				"value": "7"
+			},
+			{
+				"op": "replace",
+				"path": "category",
+				"value": "INFUSION"
+			},
+			{
+				"op": "add",
+				"path": "meta",
+				"value": ["REVERSE"]
+			}
+        ]
+	},
+    {
+        "key": "INFUSIONENCHANTMENTFM",
+        "ops": [
+			{
+				"op": "replace",
+				"path": "location/0",
+				"value": "-6"
+			},
+			{
+				"op": "replace",
+				"path": "location/1",
+				"value": "6"
+			},
+			{
+				"op": "replace",
+				"path": "category",
+				"value": "INFUSION"
+			},
+            {
+				"op": "add",
+				"path": "parents/1",
+                "value": "INFUSIONENCHANTMENT"
+			}
+        ]
+	},
+    {
+        "key": "EMERALD_DUPE",
+        "ops": [
+			{
+				"op": "replace",
+				"path": "location/0",
+				"value": "4"
+			},
+			{
+				"op": "replace",
+				"path": "location/1",
+				"value": "7"
+			},
+			{
+				"op": "replace",
+				"path": "category",
+				"value": "ALCHEMY"
+			},
+			{
+				"op": "remove",
+				"path": "parents/0"
+			},
+			{
+				"op": "replace",
+				"path": "parents/0",
+				"value": "METALPURIFICATION"
+			},
+			{
+				"op": "add",
+				"path": "meta",
+				"value": ["REVERSE", "HIDDEN"]
+			}
+        ]
+	},
+    {
+        "key": "SAVE_THE_SQUID",
+        "ops": [
+			{
+				"op": "replace",
+				"path": "location/0",
+				"value": "6"
+			},
+			{
+				"op": "replace",
+				"path": "location/1",
+				"value": "9"
+			},
+			{
+				"op": "replace",
+				"path": "category",
+				"value": "ALCHEMY"
+			},
+			{
+				"op": "add",
+				"path": "meta",
+				"value": ["REVERSE"]
+			}
+        ]
+	},
+    {
+        "key": "TAINTED_BLOCKS",
+        "ops": [
+			{
+				"op": "replace",
+				"path": "location/0",
+				"value": "6"
+			},
+			{
+				"op": "replace",
+				"path": "location/1",
+				"value": "7"
+			},
+			{
+				"op": "replace",
+				"path": "category",
+				"value": "ALCHEMY"
+            },
+			{
+				"op": "add",
+				"path": "parents/1",
+				"value": "EMERALD_DUPE"
+			}
+        ]
+	},
+    {
+        "key": "DIABOLIST_FORK",
+        "ops": [
+			{
+				"op": "replace",
+				"path": "location/0",
+				"value": "-4"
+			},
+			{
+				"op": "replace",
+				"path": "location/1",
+				"value": "9"
+			},
+			{
+				"op": "replace",
+				"path": "category",
+				"value": "INFUSION"
+            },
+            {
+				"op": "replace",
+				"path": "parents/0",
+				"value": "~RINGNUTRITION"
+            },
+			{
+				"op": "add",
+				"path": "parents/1",
+				"value": "PURESHOVEL"
+			},
+			{
+				"op": "add",
+				"path": "meta",
+				"value": ["REVERSE"]
+			}
+        ]
+	},
+    {
+        "key": "WRATH_CAGE",
+        "ops": [
+			{
+				"op": "replace",
+				"path": "location/0",
+				"value": "-2"
+			},
+			{
+				"op": "replace",
+				"path": "location/1",
+				"value": "9"
+			},
+			{
+				"op": "replace",
+				"path": "category",
+				"value": "INFUSION"
+            },
+			{
+				"op": "add",
+				"path": "meta",
+				"value": ["HIDDEN"]
+			}
+        ]
+	},
+    {
+        "key": "MAGICAL_FLOWER",
+        "ops": [
+			{
+				"op": "replace",
+				"path": "location/0",
+				"value": "-10"
+			},
+			{
+				"op": "replace",
+				"path": "location/1",
+				"value": "4"
+			},
+			{
+				"op": "replace",
+				"path": "category",
+				"value": "BASICS"
+            },
+            {
+				"op": "replace",
+				"path": "parents/0",
+				"value": "~INFUSION"
+            },
+            {
+				"op": "add",
+				"path": "meta",
+				"value": ["REVERSE", "ROUND"]
+			}
+        ]
+	},
+    {
+        "key": "BLOOD_RAPIER",
+        "ops": [
+			{
+				"op": "replace",
+				"path": "location/0",
+				"value": "8"
+			},
+			{
+				"op": "replace",
+				"path": "location/1",
+				"value": "0"
+			},
+			{
+				"op": "replace",
+				"path": "category",
+				"value": "BASICS"
+            },
+            {
+				"op": "add",
+				"path": "meta",
+				"value": ["REVERSE"]
+			}
+        ]
+	},
+    {
+        "key": "DIVINE_ORB",
+        "ops": [
+			{
+				"op": "replace",
+				"path": "location/0",
+				"value": "8"
+			},
+			{
+				"op": "replace",
+				"path": "location/1",
+				"value": "-2"
+			},
+			{
+				"op": "replace",
+				"path": "category",
+				"value": "BASICS"
+            },
+            {
+				"op": "add",
+				"path": "meta",
+				"value": ["REVERSE"]
+			}
+        ]
+	}
+]

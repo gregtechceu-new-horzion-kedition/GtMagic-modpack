@@ -1,0 +1,4 @@
+{
+  "name": "layout:roomcount_decreasing_medium",
+  "numRooms": [40, 32, 24, 16, 8]
+}

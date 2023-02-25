@@ -1,0 +1,8 @@
+{
+  "name": "fnar:dungeon_cave_small",
+  "exclusive": false, // too smol
+  "inherit": [
+    "fnar:dungeon_cave",
+    "layout:size_small"
+  ]
+}

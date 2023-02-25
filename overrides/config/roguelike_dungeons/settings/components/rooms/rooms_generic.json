@@ -1,0 +1,8 @@
+{
+  "name": "rooms:generic",
+  "inherit": [
+    "rooms:hostile",
+    "rooms:neutral",
+    "rooms:friendly"
+  ]
+}
