@@ -929,7 +929,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("caster_basic", "UNLOCKAURO
 
 // Blank Lesser Focus
 mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:focus_1>);
-mods.thaumcraft.Crucible.registerRecipe("blank_lesser_focus", "BASEAUROMANCY", <thaumcraft:focus_1>, <gregtech:meta_lens:2000>, 
+mods.thaumcraft.Crucible.registerRecipe("blank_lesser_focus", "UNLOCKAUROMANCY", <thaumcraft:focus_1>, <gregtech:meta_lens:2000>, 
 	[<aspect:potentia> *32, <aspect:praecantatio> *32, <aspect:auram> *16]);
 	
 // Blank Advanced Focus
