@@ -372,8 +372,8 @@ mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:essentia_output>);
 mods.thaumcraft.Infusion.registerRecipe("essentia_output", "ESSENTIATRANSPORT", <thaumcraft:essentia_output>, 12, 
 	[<aspect:motus> *64, <aspect:machina> *64, <aspect:praecantatio> *32, <aspect:aqua> *16, <aspect:vacuos> *8, <aspect:auram> *8], 
 	<thaumcraft:metal_alchemical>, 
-	[<bloodmagic:component:219>, <ore:plateRoseGold>, <ore:ingotVoid>, <ore:ingotVoid>, <thaumcraft:salis_mundus>,
-	<bloodmagic:component:219>, <ore:plateRoseGold>, <ore:ingotVoid>, <ore:ingotVoid>, <thaumcraft:salis_mundus>]);
+	[<gregtech:meta_item_1:219>, <ore:plateRoseGold>, <ore:ingotVoid>, <ore:ingotVoid>, <thaumcraft:salis_mundus>,
+	<gregtech:meta_item_1:219>, <ore:plateRoseGold>, <ore:ingotVoid>, <ore:ingotVoid>, <thaumcraft:salis_mundus>]);
 
 // Potion Sprayer
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:potion_sprayer>);
