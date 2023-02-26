@@ -116,9 +116,9 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("inlay", "INFUSIONSTABLE", 
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:arcane_workbench_charger>);
 mods.thaumcraft.Infusion.registerRecipe("workbench_charger", "WORKBENCHCHARGER", <thaumcraft:arcane_workbench_charger>, 6, 
 	[<aspect:praecantatio> *50 , <aspect:luxuria> *50, <aspect:motus> *50, <aspect:ordo> *50], 
-	<ore:circuitIv>,
-		[<thaumcraft:stone_arcane>, <ore:gemLapotron>, <thaumcraft:stone_arcane>, <gregtech:meta_item_1:218>, <thaumcraft:stone_arcane>, 
-        <ore:gemLapotron>, <thaumcraft:stone_arcane>, <gregtech:meta_item_1:233>]);
+	<ore:circuitHv>,
+		[<thaumcraft:stone_arcane>, <gregtech:meta_item_1:593>, <thaumcraft:stone_arcane>, <gregtech:meta_item_1:218>, <thaumcraft:stone_arcane>, 
+        <gregtech:meta_item_1:593>, <thaumcraft:stone_arcane>, <gregtech:meta_item_1:233>]);
 
 		
 // Thaumic Dioptra
