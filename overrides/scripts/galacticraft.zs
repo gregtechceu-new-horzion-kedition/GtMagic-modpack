@@ -36,7 +36,7 @@ mods.jei.JEI.removeAndHide(<galacticraftplanets:venus:9>);
 mods.jei.JEI.removeAndHide(<galacticraftplanets:venus:10>);
 mods.jei.JEI.removeAndHide(<galacticraftplanets:venus:8>);
 mods.jei.JEI.removeAndHide(<galacticraftplanets:venus:12>);
-
+mods.jei.JEI.removeAndHide(<galacticraftcore:basic_item:2>);
 //atomic battery
 recipes.remove(<galacticraftplanets:atomic_battery>);
 

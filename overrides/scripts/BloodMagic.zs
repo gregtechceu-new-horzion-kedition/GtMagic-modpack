@@ -73,7 +73,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("blood_altar", "", 100,
 	[<aspect:aqua> *20, <aspect:aer> *20, <aspect:ordo> *20, <aspect:perditio> *20, <aspect:ignis> *20, <aspect:terra> *20], 
 	<bloodmagic:altar>, 
 	[[<thaumcraft:stone_arcane_brick>, <twilightforest:maze_map_focus>, <thaumcraft:stone_arcane_brick>], 
-	[<extrautils2:compressedcobblestone:1>, <thaumcraft:crucible>, <extrautils2:compressedcobblestone:1>], 
+	[<ore:compressed1xCobblestone>, <thaumcraft:crucible>, <ore:compressed1xCobblestone>], 
 	[<ore:plateAluminium>, <thaumcraft:smelter_thaumium>, <ore:plateAluminium>]]);
 	
 	
@@ -178,8 +178,8 @@ recipes.remove(<bloodmagic:ritual_controller>);
 mods.thaumcraft.Infusion.registerRecipe("master_ritual_stone", "", <bloodmagic:ritual_controller>, 12, 
 	[<aspect:terra> *36, <aspect:ignis> *24, <aspect:tenebrae> *16, <aspect:praecantatio> *16, <aspect:aer> *8, <aspect:cognitio> *8], 
 	<bloodmagic:ritual_stone>, 
-	[<appliedenergistics2:material:45>, <forbiddenmagicre:tainted_stone>, <bloodarsenal:slate:1>, <bloodmagic:path:7>, <bloodarsenal:slate:1>, 
-	<appliedenergistics2:material:45>, <forbiddenmagicre:tainted_stone>, <bloodarsenal:slate:1>, <bloodmagic:path:7>, <bloodarsenal:slate:1>]);
+	[<ore:dustObsidian>, <forbiddenmagicre:tainted_stone>, <bloodarsenal:slate:1>, <bloodmagic:path:7>, <bloodarsenal:slate:1>, 
+	<ore:dustObsidian>, <forbiddenmagicre:tainted_stone>, <bloodarsenal:slate:1>, <bloodmagic:path:7>, <bloodarsenal:slate:1>]);
 	
 // Imperfect Ritual Stone
 recipes.remove(<bloodmagic:ritual_controller:1>);
@@ -196,8 +196,8 @@ recipes.remove(<bloodmagic:ritual_stone>);
 mods.thaumcraft.Infusion.registerRecipe("ritual_stone", "", <bloodmagic:ritual_stone>, 8, 
 	[<aspect:terra> *24, <aspect:ignis> *18, <aspect:tenebrae> *12, <aspect:praecantatio> *6, <aspect:aer> *3], 
 	<bloodmagic:ritual_controller:1>, 
-	[<appliedenergistics2:material:45>, <forbiddenmagicre:tainted_stone>, <bloodarsenal:slate:1>, <bloodmagic:path:7>, <bloodarsenal:slate:1>, 
-	<appliedenergistics2:material:45>, <forbiddenmagicre:tainted_stone>, <bloodarsenal:slate:1>, <bloodmagic:path:7>, <bloodarsenal:slate:1>]);
+	[<ore:dustObsidian>, <forbiddenmagicre:tainted_stone>, <bloodarsenal:slate:1>, <bloodmagic:path:7>, <bloodarsenal:slate:1>, 
+	<ore:dustObsidian>, <forbiddenmagicre:tainted_stone>, <bloodarsenal:slate:1>, <bloodmagic:path:7>, <bloodarsenal:slate:1>]);
 
 // Teleposer
 recipes.remove(<bloodmagic:teleposer>);

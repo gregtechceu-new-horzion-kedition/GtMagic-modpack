@@ -17,6 +17,9 @@ mods.jei.JEI.removeAndHide(<thaumcraft:amulet_vis>);
 
 // --- Recipes ---
 
+recipes.remove(<thaumcraft:nugget:*>);
+recipes.remove(<thaumcraft:ingot:*>);
+
 // Arcane Stone Bricks
 recipes.remove(<thaumcraft:stone_arcane_brick>);
 laser_engraver.recipeBuilder()
@@ -114,8 +117,8 @@ mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:arcane_workbench_charge
 mods.thaumcraft.Infusion.registerRecipe("workbench_charger", "WORKBENCHCHARGER", <thaumcraft:arcane_workbench_charger>, 6, 
 	[<aspect:praecantatio> *50 , <aspect:luxuria> *50, <aspect:motus> *50, <aspect:ordo> *50], 
 	<ore:circuitIv>,
-		[<thaumcraft:stone_arcane>, <ore:gemLapotron>, <thaumcraft:stone_arcane>, <gregtech:meta_item_1:604>, <thaumcraft:stone_arcane>, 
-        <ore:gemLapotron>, <thaumcraft:stone_arcane>, <gregtech:meta_item_1:604>]);
+		[<thaumcraft:stone_arcane>, <ore:gemLapotron>, <thaumcraft:stone_arcane>, <gregtech:meta_item_1:218>, <thaumcraft:stone_arcane>, 
+        <ore:gemLapotron>, <thaumcraft:stone_arcane>, <gregtech:meta_item_1:233>]);
 
 		
 // Thaumic Dioptra
@@ -360,17 +363,17 @@ mods.thaumcraft.Infusion.registerRecipe("mirror_essentia", "MIRRORESSENTIA", <th
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:essentia_input>);
 mods.thaumcraft.Infusion.registerRecipe("essentia_input", "ESSENTIATRANSPORT", <thaumcraft:essentia_input>, 12, 
 	[<aspect:motus> *64, <aspect:machina> *64, <aspect:praecantatio> *32, <aspect:aqua> *16, <aspect:potentia> *8, <aspect:auram> *8], 
-	<thaumcraft:mirror_essentia>, 
-	[<bloodmagic:component:17>, <ore:plateRoseGold>, <ore:ingotVoid>, <ore:ingotVoid>, <thaumcraft:salis_mundus>,
-	<bloodmagic:component:17>, <ore:plateRoseGold>, <ore:ingotVoid>, <ore:ingotVoid>, <thaumcraft:salis_mundus>]);
+	<thaumcraft:metal_alchemical>, 
+	[<gregtech:meta_item_1:234>, <ore:plateRoseGold>, <ore:ingotVoid>, <ore:ingotVoid>, <thaumcraft:salis_mundus>,
+	<gregtech:meta_item_1:234>, <ore:plateRoseGold>, <ore:ingotVoid>, <ore:ingotVoid>, <thaumcraft:salis_mundus>]);
 	
 // Emptying Essentia Transfuser
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:essentia_output>);
 mods.thaumcraft.Infusion.registerRecipe("essentia_output", "ESSENTIATRANSPORT", <thaumcraft:essentia_output>, 12, 
 	[<aspect:motus> *64, <aspect:machina> *64, <aspect:praecantatio> *32, <aspect:aqua> *16, <aspect:vacuos> *8, <aspect:auram> *8], 
-	<thaumcraft:mirror_essentia>, 
-	[<bloodmagic:component:18>, <ore:plateRoseGold>, <ore:ingotVoid>, <ore:ingotVoid>, <thaumcraft:salis_mundus>,
-	<bloodmagic:component:18>, <ore:plateRoseGold>, <ore:ingotVoid>, <ore:ingotVoid>, <thaumcraft:salis_mundus>]);
+	<thaumcraft:metal_alchemical>, 
+	[<bloodmagic:component:219>, <ore:plateRoseGold>, <ore:ingotVoid>, <ore:ingotVoid>, <thaumcraft:salis_mundus>,
+	<bloodmagic:component:219>, <ore:plateRoseGold>, <ore:ingotVoid>, <ore:ingotVoid>, <thaumcraft:salis_mundus>]);
 
 // Potion Sprayer
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:potion_sprayer>);
@@ -615,16 +618,9 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("void_hoe", "",  50,
 mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:elemental_axe>);
 mods.thaumcraft.Infusion.registerRecipe("elemental_axe", "ELEMENTALTOOLS", <thaumcraft:elemental_axe>, 4, 
 	[<aspect:herba> *20, <aspect:instrumentum> *20, <aspect:motus> *20, <aspect:aqua> *10], 
-	<thaumcraft:void_axe>, 
+	<thaumcraft:thaumium_axe>, 
 	[<ore:gemFlawlessSapphire>, <thaumcraft:log_silverwood>, <ore:oreCrystalWater>, <ore:gemFlawlessDiamond>, <thaumcraft:log_greatwood>, <ore:oreCrystalWater>]);
 
-// Sword of the Zephyr
-mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:elemental_sword>);
-mods.thaumcraft.Infusion.registerRecipe("elemental_sword", "ELEMENTALTOOLS", <thaumcraft:elemental_sword>, 4, 
-	[<aspect:aer> *20, <aspect:motus> *20, <aspect:potentia> *20, <aspect:aversio> *20], 
-	<thaumcraft:thaumium_sword>, 
-	[<ore:gemFlawlessGarnetYellow>, <thaumcraft:log_silverwood>, <ore:oreCrystalAir>, <ore:gemFlawlessDiamond>, <thaumcraft:log_greatwood>, <ore:oreCrystalAir>]);
-	
 // Sword of the Zephyr
 mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:elemental_sword>);
 mods.thaumcraft.Infusion.registerRecipe("elemental_sword", "ELEMENTALTOOLS", <thaumcraft:elemental_sword>, 4, 

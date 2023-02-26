@@ -57,5 +57,6 @@
 <ore:oreSilicon>.remove(<galacticraftplanets:venus:10>);
 <ore:oreLead>.remove(<galacticraftplanets:venus:8>);
 <ore:blockLead>.remove(<galacticraftplanets:venus:12>);
+<ore:itemSilicon>.remove(<galacticraftcore:basic_item:2>);
 
 <ore:blockMeteoricIron>.add(<galacticraftcore:basic_block_core:12>);
