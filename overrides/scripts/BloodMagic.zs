@@ -334,23 +334,23 @@ mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:item_routing_node>,
 
 // Weak Blood Orb
 mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:diamond>);
-mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), <tconstruct:pan_head>.withTag({Material: "aluminium"}), 0, 5000, 2,2);
+mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), <gregtech:meta_block_compressed_0:2>, 0, 5000, 2,2);
 
 // Apprentice Blood Orb
 mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:redstone_block>);
-mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:apprentice"}), <tconstruct:pan_head>.withTag({Material: "stainless_steel"}), 1, 10000, 2,2);
+mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:apprentice"}), <gregtech:meta_block_compressed_20:3>, 1, 10000, 2,2);
 
 // Magician Blood Orb
 mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:gold_block>);
-mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"}), <tconstruct:pan_head>.withTag({Material: "titanium"}), 2, 30000, 2,2);
+mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"}), <gregtech:meta_block_compressed_7:1>, 2, 30000, 2,2);
 
 // Master Blood Orb
 mods.bloodmagic.BloodAltar.removeRecipe(<bloodmagic:blood_shard>);
-mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:master"}), <tconstruct:pan_head>.withTag({Material: "tungsten_steel"}),3, 60000, 2,2);
+mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:master"}), <gregtech:meta_block_compressed_125:13>,3, 60000, 2,2);
 
 // Archmage Blood Orb
 mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:nether_star>);
-mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"}), <tconstruct:pan_head>.withTag({Material: "osmium"}), 4, 120000, 2,2);
+mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"}), <gregtech:meta_block_compressed_4:11>, 4, 120000, 2,2);
 
 // Weak Activation Crystal
 mods.bloodmagic.BloodAltar.removeRecipe(<bloodmagic:lava_crystal>);
