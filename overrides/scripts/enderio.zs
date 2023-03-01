@@ -1,5 +1,6 @@
 import mods.tconstruct.Alloy;
 import mods.tconstruct.Casting;
+import mods.tconstruct.Melting;
 
 //remove Enderio Recipes
 recipes.removeByMod("enderio");
@@ -474,8 +475,34 @@ mixer.recipeBuilder()
     .duration(100)
     .buildAndRegister();
 
+
+<recipemap:electric_blast_furnace>.findRecipe(120, [<metaitem:dustVibrantAlloy>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
+<recipemap:electric_blast_furnace>.findRecipe(120, [<metaitem:dustVibrantAlloy>, <metaitem:circuit.integrated>.withTag({Configuration: 2})], [<liquid:helium> * 100]).remove();
+
+<recipemap:vacuum_freezer>.findRecipe(120, [<metaitem:ingotHotVibrantAlloy>], null).remove();
+
+<recipemap:electric_blast_furnace>.findRecipe(120, [<metaitem:dustDarkSteel>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
+<recipemap:electric_blast_furnace>.findRecipe(120, [<metaitem:dustDarkSteel>, <metaitem:circuit.integrated>.withTag({Configuration: 2})], [<liquid:nitrogen> * 1000]).remove();
+
+<recipemap:vacuum_freezer>.findRecipe(120, [<metaitem:ingotHotDarkSteel>], null).remove();
+
+
+<recipemap:electric_blast_furnace>.findRecipe(1920, [<metaitem:dustEndSteel>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
+<recipemap:electric_blast_furnace>.findRecipe(1920, [<metaitem:dustEndSteel>, <metaitem:circuit.integrated>.withTag({Configuration: 2})], [<liquid:krypton> * 10]).remove();
+
+<recipemap:vacuum_freezer>.findRecipe(120, [<metaitem:ingotHotEndSteel>], null).remove();
+
+<recipemap:electric_blast_furnace>.findRecipe(160, [<metaitem:dustEnergeticAlloy>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
+<recipemap:electric_blast_furnace>.findRecipe(160, [<metaitem:dustEnergeticAlloy>, <metaitem:circuit.integrated>.withTag({Configuration: 2})], [<liquid:helium> * 100]).remove();
+
+<recipemap:vacuum_freezer>.findRecipe(120, [<metaitem:ingotHotEnergeticAlloy>], null).remove();
+
+<recipemap:electric_blast_furnace>.findRecipe(120, [<metaitem:dustPulsatingIron>, <metaitem:circuit.integrated>.withTag({Configuration: 1})], null).remove();
+<recipemap:electric_blast_furnace>.findRecipe(120, [<metaitem:dustPulsatingIron>, <metaitem:circuit.integrated>.withTag({Configuration: 2})], [<liquid:nitrogen> * 1000]).remove();
+
+<recipemap:vacuum_freezer>.findRecipe(120, [<metaitem:ingotHotPulsatingIron>], null).remove();
+
 //Blast Furnace Recipe
-furnace.remove(<ore:ingotPulsatingIron>.firstItem);
 electric_blast_furnace.recipeBuilder()
     .inputs(<ore:dustPulsatingIron>.firstItem)
     .outputs(<ore:ingotPulsatingIron>.firstItem)
@@ -494,7 +521,6 @@ electric_blast_furnace.recipeBuilder()
     .EUt(120)
     .buildAndRegister();
 
-furnace.remove(<ore:ingotVibrantAlloy>.firstItem);
 electric_blast_furnace.recipeBuilder()
     .inputs(<ore:dustVibrantAlloy>.firstItem)
     .outputs(<ore:ingotVibrantAlloy>.firstItem)
@@ -513,7 +539,6 @@ electric_blast_furnace.recipeBuilder()
     .EUt(120)
     .buildAndRegister();
 
-furnace.remove(<ore:ingotEnergeticAlloy>.firstItem);
 electric_blast_furnace.recipeBuilder()
     .inputs(<ore:dustEnergeticAlloy>.firstItem)
     .outputs(<ore:ingotEnergeticAlloy>.firstItem)
@@ -532,7 +557,6 @@ electric_blast_furnace.recipeBuilder()
     .EUt(120)
     .buildAndRegister();
 
-furnace.remove(<ore:ingotDarkSteel>.firstItem);
 electric_blast_furnace.recipeBuilder()
     .inputs(<ore:dustDarkSteel>.firstItem)
     .outputs(<ore:ingotDarkSteel>.firstItem)
@@ -551,7 +575,6 @@ electric_blast_furnace.recipeBuilder()
     .EUt(120)
     .buildAndRegister();
 
-furnace.remove(<ore:ingotEndSteel>.firstItem);
 electric_blast_furnace.recipeBuilder()
     .inputs(<ore:dustEndSteel>.firstItem)
     .outputs(<ore:ingotEndSteel>.firstItem)
@@ -573,3 +596,10 @@ electric_blast_furnace.recipeBuilder()
 //Remove Casting
 Casting.removeBasinRecipe(<ore:itemPulsatingCrystal>.firstItem);
 Casting.removeBasinRecipe(<ore:itemVibrantCrystal>.firstItem);
+
+//Remove Tinker Smelting
+Melting.removeRecipe(<liquid:energetic_alloy>);
+Melting.removeRecipe(<liquid:dark_steel>);
+Melting.removeRecipe(<liquid:end_steel>);
+Melting.removeRecipe(<liquid:vibrant_alloy>);
+Melting.removeRecipe(<liquid:pulsating_iron>);

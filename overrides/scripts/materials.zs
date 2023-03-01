@@ -57,7 +57,7 @@ MaterialBuilder(32010, "pulsating_iron")
     <material:iron> * 1,
     <material:redstone_alloy> * 1
     ])
-    .components([<material:iron> * 1,<material:ender_pearl> * 1])
+    .blastTemp(1800,"LOW",120, 1600)
     .build();
 
 MaterialBuilder(32014, "conductive_iron")
@@ -80,6 +80,7 @@ MaterialBuilder(32012, "energetic_alloy")
     <material:gold>* 1,
     <material:conductive_iron>* 1
     ])
+    .blastTemp(2500,"MID",160,3200)
     .cableProperties(512, 2, 4)
     .build();
 
@@ -92,6 +93,7 @@ MaterialBuilder(32011, "vibrant_alloy")
     <material:energetic_alloy>* 1,
     <material:chromite>* 1
     ])
+    .blastTemp(3600,"MID",120, 6000)
     .cableProperties(2048, 4, 4)
     .build();
 
@@ -125,6 +127,7 @@ MaterialBuilder(32015, "dark_steel")
     <material:coal>* 1,
     <material:obsidian>* 1
     ])
+    .blastTemp(1800,"LOW",120,1000)
     .build();
 
 MaterialBuilder(32016, "end_steel")
@@ -136,6 +139,7 @@ MaterialBuilder(32016, "end_steel")
     <material:endstone>* 1,
     <material:tungsten_steel>* 1
     ])
+    .blastTemp(4500,"HIGHEST",1920,1233)
     .build();
 
 MaterialBuilder(32018, "meteoric_iron")

@@ -645,7 +645,7 @@ cutter.recipeBuilder()
 // Flat Fluid Transfer Node
 recipes.remove(<extrautils2:flattransfernode:1>);
 cutter.recipeBuilder()
-	.inputs([<extrautils2:grocket:1>])
+	.inputs([<extrautils2:grocket:2>])
 	.outputs(<extrautils2:flattransfernode:1>)
 	.duration(20).EUt(16).buildAndRegister();	
 	
