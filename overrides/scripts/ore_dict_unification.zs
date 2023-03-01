@@ -60,3 +60,11 @@
 <ore:itemSilicon>.remove(<galacticraftcore:basic_item:2>);
 
 <ore:blockMeteoricIron>.add(<galacticraftcore:basic_block_core:12>);
+
+//ender io
+<ore:ingotDarkSteel>.remove(<enderio:item_alloy_ingot:6>);
+<ore:ingotPulsatingIron>.remove(<enderio:item_alloy_ingot:5>);
+<ore:ingotVibrantAlloy>.remove(<enderio:item_alloy_ingot:2>);
+<ore:ingotEnergeticAlloy>.remove(<enderio:item_alloy_ingot:1>);
+<ore:ingotEndSteel>.remove(<enderio:item_alloy_ingot:8>);
+<ore:itemSilicon>.remove(<enderio:item_material:5>);

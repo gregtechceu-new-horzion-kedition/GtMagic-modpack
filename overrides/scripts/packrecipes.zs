@@ -5,7 +5,6 @@ furnace.remove(<minecraft:coal:1>);
 //#Add
 //remove rotating elevator
 recipes.remove(<openblocks:elevator_rotating:*>);
-recipes.removeByMod("enderio");
 recipes.removeByMod("utilityworlds");
 
 //core mod

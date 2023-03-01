@@ -6,3 +6,5 @@ mods.jei.JEI.hideCategory("galacticraft.circuits");
 mods.jei.JEI.hideCategory("galacticraft.gas_liquefier");
 mods.jei.JEI.hideCategory("galacticraft.methaneSynthesizer");
 mods.jei.JEI.hideCategory("galacticraft.ingotcompressor");
+mods.jei.JEI.hideCategory("AlloySmelter");
+mods.jei.JEI.hideCategory("EIOTank");
