@@ -568,7 +568,7 @@ recipes.remove(<galacticraftcore:fluid_tank>);
 //oxygen mask
 recipes.remove(<galacticraftcore:oxygen_mask>);
 assembler.recipeBuilder()
-    .inputs(<galacticraftcore:steel_helmet:*>)
+    .inputs(<galacticraftcore:steel_helmet>)
     .inputs(<gtnhcore:packresource:9> * 16)
     .fluidInputs(<liquid:silicone_rubber> * 72)
     .outputs(<galacticraftcore:oxygen_mask>)
