@@ -335,6 +335,7 @@ recipes.addShaped(<forestry:trade_station>,
 recipes.remove(<forestry:ffarm>.withTag({FarmBlock: 0}));
 assembler.recipeBuilder()
 	.inputs([<ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:stonebrick>])
+	.circuit(1)
 	.outputs(<forestry:ffarm>.withTag({FarmBlock: 0}))
 	.fluidInputs([<liquid:creosote> *500])
 	.duration(200).EUt(30).buildAndRegister();
@@ -342,7 +343,8 @@ assembler.recipeBuilder()
 // Farm Gearbox
 recipes.remove(<forestry:ffarm:2>.withTag({FarmBlock: 0}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel> *4, <forestry:thermionic_tubes:4> *4, motorLv, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:stonebrick>])
+	.inputs([<ore:gearSteel> *4, <forestry:thermionic_tubes:4> *4, motorLv, <forestry:ffarm>.withTag({FarmBlock: 0})])
+	.circuit(1)
 	.outputs(<forestry:ffarm:2>.withTag({FarmBlock: 0}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -350,7 +352,8 @@ assembler.recipeBuilder()
 // Farm Hatch
 recipes.remove(<forestry:ffarm:3>.withTag({FarmBlock: 0}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:1> *4, conveyorLv *2, motorLv, <minecraft:hopper>, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:stonebrick>])
+	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:1> *4, conveyorLv *2, motorLv, <minecraft:hopper>, <forestry:ffarm>.withTag({FarmBlock: 0})])
+	.circuit(1)
 	.outputs(<forestry:ffarm:3>.withTag({FarmBlock: 0}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -358,7 +361,8 @@ assembler.recipeBuilder()
 // Farm Valve
 recipes.remove(<forestry:ffarm:4>.withTag({FarmBlock: 0}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:11> *4, pumpLv *2, motorLv, <ore:ringRubber>, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:stonebrick>])
+	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:11> *4, pumpLv *2, motorLv, <ore:ringRubber>, <forestry:ffarm>.withTag({FarmBlock: 0})])
+	.circuit(1)
 	.outputs(<forestry:ffarm:4>.withTag({FarmBlock: 0}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -366,7 +370,8 @@ assembler.recipeBuilder()
 // Farm Control
 recipes.remove(<forestry:ffarm:5>.withTag({FarmBlock: 0}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:4>, <ore:circuitLv> *2, motorLv, <ore:cableGtSingleTin>, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:stonebrick>])
+	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:4>, <ore:circuitLv> *2, motorLv, <ore:cableGtSingleTin>, <forestry:ffarm>.withTag({FarmBlock: 0})])
+	.circuit(1)
 	.outputs(<forestry:ffarm:5>.withTag({FarmBlock: 0}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -376,6 +381,7 @@ assembler.recipeBuilder()
 recipes.remove(<forestry:ffarm>.withTag({FarmBlock: 1}));
 assembler.recipeBuilder()
 	.inputs([<ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:stonebrick:1>])
+	.circuit(2)
 	.outputs(<forestry:ffarm>.withTag({FarmBlock: 1}))
 	.fluidInputs([<liquid:creosote> *500])
 	.duration(200).EUt(30).buildAndRegister();
@@ -383,7 +389,8 @@ assembler.recipeBuilder()
 // Farm Gearbox
 recipes.remove(<forestry:ffarm:2>.withTag({FarmBlock: 1}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel> *4, <forestry:thermionic_tubes:4> *4, motorLv, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:stonebrick:1>])
+	.inputs([<ore:gearSteel> *4, <forestry:thermionic_tubes:4> *4, motorLv, <forestry:ffarm>.withTag({FarmBlock: 1})])
+	.circuit(2)
 	.outputs(<forestry:ffarm:2>.withTag({FarmBlock: 1}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -391,7 +398,8 @@ assembler.recipeBuilder()
 // Farm Hatch
 recipes.remove(<forestry:ffarm:3>.withTag({FarmBlock: 1}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:1> *4, conveyorLv *2, motorLv, <minecraft:hopper>, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:stonebrick:1>])
+	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:1> *4, conveyorLv *2, motorLv, <minecraft:hopper>, <forestry:ffarm>.withTag({FarmBlock: 1})])
+	.circuit(2)
 	.outputs(<forestry:ffarm:3>.withTag({FarmBlock: 1}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -399,7 +407,8 @@ assembler.recipeBuilder()
 // Farm Valve
 recipes.remove(<forestry:ffarm:4>.withTag({FarmBlock: 1}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:11> *4, pumpLv *2, motorLv, <ore:ringRubber>, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:stonebrick:1>])
+	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:11> *4, pumpLv *2, motorLv, <ore:ringRubber>, <forestry:ffarm>.withTag({FarmBlock: 1})])
+	.circuit(2)
 	.outputs(<forestry:ffarm:4>.withTag({FarmBlock: 1}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -407,7 +416,8 @@ assembler.recipeBuilder()
 // Farm Control
 recipes.remove(<forestry:ffarm:5>.withTag({FarmBlock: 1}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:4>, <ore:circuitLv> *2, motorLv, <ore:cableGtSingleTin>, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:stonebrick:1>])
+	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:4>, <ore:circuitLv> *2, motorLv, <ore:cableGtSingleTin>, <forestry:ffarm>.withTag({FarmBlock: 1})])
+	.circuit(2)
 	.outputs(<forestry:ffarm:5>.withTag({FarmBlock: 1}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -417,6 +427,7 @@ assembler.recipeBuilder()
 recipes.remove(<forestry:ffarm>.withTag({FarmBlock: 2}));
 assembler.recipeBuilder()
 	.inputs([<ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:stonebrick:2>])
+	.circuit(3)
 	.outputs(<forestry:ffarm>.withTag({FarmBlock: 2}))
 	.fluidInputs([<liquid:creosote> *500])
 	.duration(200).EUt(30).buildAndRegister();
@@ -424,7 +435,8 @@ assembler.recipeBuilder()
 // Farm Gearbox
 recipes.remove(<forestry:ffarm:2>.withTag({FarmBlock: 2}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel> *4, <forestry:thermionic_tubes:4> *4, motorLv, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:stonebrick:2>])
+	.inputs([<ore:gearSteel> *4, <forestry:thermionic_tubes:4> *4, motorLv, <forestry:ffarm>.withTag({FarmBlock: 2})])
+	.circuit(3)
 	.outputs(<forestry:ffarm:2>.withTag({FarmBlock: 2}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -432,7 +444,8 @@ assembler.recipeBuilder()
 // Farm Hatch
 recipes.remove(<forestry:ffarm:3>.withTag({FarmBlock: 2}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:1> *4, conveyorLv *2, motorLv, <minecraft:hopper>, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:stonebrick:2>])
+	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:1> *4, conveyorLv *2, motorLv, <minecraft:hopper>, <forestry:ffarm>.withTag({FarmBlock: 2})])
+	.circuit(3)
 	.outputs(<forestry:ffarm:3>.withTag({FarmBlock: 2}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -440,7 +453,8 @@ assembler.recipeBuilder()
 // Farm Valve
 recipes.remove(<forestry:ffarm:4>.withTag({FarmBlock: 2}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:11> *4, pumpLv *2, motorLv, <ore:ringRubber>, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:stonebrick:2>])
+	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:11> *4, pumpLv *2, motorLv, <ore:ringRubber>, <forestry:ffarm>.withTag({FarmBlock: 2})])
+	.circuit(3)
 	.outputs(<forestry:ffarm:4>.withTag({FarmBlock: 2}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -448,7 +462,8 @@ assembler.recipeBuilder()
 // Farm Control
 recipes.remove(<forestry:ffarm:5>.withTag({FarmBlock: 2}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:4>, <ore:circuitLv> *2, motorLv, <ore:cableGtSingleTin>, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:stonebrick:2>])
+	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:4>, <ore:circuitLv> *2, motorLv, <ore:cableGtSingleTin>, <forestry:ffarm>.withTag({FarmBlock: 2})])
+	.circuit(3)
 	.outputs(<forestry:ffarm:5>.withTag({FarmBlock: 2}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -458,6 +473,7 @@ assembler.recipeBuilder()
 recipes.remove(<forestry:ffarm>.withTag({FarmBlock: 3}));
 assembler.recipeBuilder()
 	.inputs([<ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:brick_block>])
+	.circuit(4)
 	.outputs(<forestry:ffarm>.withTag({FarmBlock: 3}))
 	.fluidInputs([<liquid:creosote> *500])
 	.duration(200).EUt(30).buildAndRegister();
@@ -465,7 +481,8 @@ assembler.recipeBuilder()
 // Farm Gearbox
 recipes.remove(<forestry:ffarm:2>.withTag({FarmBlock: 3}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel> *4, <forestry:thermionic_tubes:4> *4, motorLv, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:brick_block>])
+	.inputs([<ore:gearSteel> *4, <forestry:thermionic_tubes:4> *4, motorLv, <forestry:ffarm>.withTag({FarmBlock: 3})])
+	.circuit(4)
 	.outputs(<forestry:ffarm:2>.withTag({FarmBlock: 3}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -473,7 +490,8 @@ assembler.recipeBuilder()
 // Farm Hatch
 recipes.remove(<forestry:ffarm:3>.withTag({FarmBlock: 3}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:1> *4, conveyorLv *2, motorLv, <minecraft:hopper>, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:brick_block>])
+	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:1> *4, conveyorLv *2, motorLv, <minecraft:hopper>, <forestry:ffarm>.withTag({FarmBlock: 3})])
+	.circuit(4)
 	.outputs(<forestry:ffarm:3>.withTag({FarmBlock: 3}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -481,7 +499,8 @@ assembler.recipeBuilder()
 // Farm Valve
 recipes.remove(<forestry:ffarm:4>.withTag({FarmBlock: 3}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:11> *4, pumpLv *2, motorLv, <ore:ringRubber>, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:brick_block>])
+	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:11> *4, pumpLv *2, motorLv, <ore:ringRubber>, <forestry:ffarm>.withTag({FarmBlock: 3})])
+	.circuit(4)
 	.outputs(<forestry:ffarm:4>.withTag({FarmBlock: 3}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -489,7 +508,8 @@ assembler.recipeBuilder()
 // Farm Control
 recipes.remove(<forestry:ffarm:5>.withTag({FarmBlock: 3}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:4>, <ore:circuitLv> *2, motorLv, <ore:cableGtSingleTin>, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:brick_block>])
+	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:4>, <ore:circuitLv> *2, motorLv, <ore:cableGtSingleTin>, <forestry:ffarm>.withTag({FarmBlock: 3})])
+	.circuit(4)
 	.outputs(<forestry:ffarm:5>.withTag({FarmBlock: 3}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -500,6 +520,7 @@ assembler.recipeBuilder()
 recipes.remove(<forestry:ffarm>.withTag({FarmBlock: 4}));
 assembler.recipeBuilder()
 	.inputs([<ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:sandstone>])
+	.circuit(5)
 	.outputs(<forestry:ffarm>.withTag({FarmBlock: 4}))
 	.fluidInputs([<liquid:creosote> *500])
 	.duration(200).EUt(30).buildAndRegister();
@@ -507,7 +528,8 @@ assembler.recipeBuilder()
 // Farm Gearbox
 recipes.remove(<forestry:ffarm:2>.withTag({FarmBlock: 4}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel> *4, <forestry:thermionic_tubes:4> *4, motorLv, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:sandstone>])
+	.inputs([<ore:gearSteel> *4, <forestry:thermionic_tubes:4> *4, motorLv, <forestry:ffarm>.withTag({FarmBlock: 4})])
+	.circuit(5)
 	.outputs(<forestry:ffarm:2>.withTag({FarmBlock: 4}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -515,7 +537,8 @@ assembler.recipeBuilder()
 // Farm Hatch
 recipes.remove(<forestry:ffarm:3>.withTag({FarmBlock: 4}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:1> *4, conveyorLv *2, motorLv, <minecraft:hopper>, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:sandstone>])
+	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:1> *4, conveyorLv *2, motorLv, <minecraft:hopper>, <forestry:ffarm>.withTag({FarmBlock: 4})])
+	.circuit(5)
 	.outputs(<forestry:ffarm:3>.withTag({FarmBlock: 4}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -523,7 +546,8 @@ assembler.recipeBuilder()
 // Farm Valve
 recipes.remove(<forestry:ffarm:4>.withTag({FarmBlock: 4}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:11> *4, pumpLv *2, motorLv, <ore:ringRubber>, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:sandstone>])
+	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:11> *4, pumpLv *2, motorLv, <ore:ringRubber>, <forestry:ffarm>.withTag({FarmBlock: 4})])
+	.circuit(5)
 	.outputs(<forestry:ffarm:4>.withTag({FarmBlock: 4}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -531,7 +555,8 @@ assembler.recipeBuilder()
 // Farm Control
 recipes.remove(<forestry:ffarm:5>.withTag({FarmBlock: 4}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:4>, <ore:circuitLv> *2, motorLv, <ore:cableGtSingleTin>, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:sandstone>])
+	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:4>, <ore:circuitLv> *2, motorLv, <ore:cableGtSingleTin>, <forestry:ffarm>.withTag({FarmBlock: 4})])
+	.circuit(5)
 	.outputs(<forestry:ffarm:5>.withTag({FarmBlock: 4}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -542,6 +567,7 @@ assembler.recipeBuilder()
 recipes.remove(<forestry:ffarm>.withTag({FarmBlock: 5}));
 assembler.recipeBuilder()
 	.inputs([<ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:sandstone:1>])
+	.circuit(6)
 	.outputs(<forestry:ffarm>.withTag({FarmBlock: 5}))
 	.fluidInputs([<liquid:creosote> *500])
 	.duration(200).EUt(30).buildAndRegister();
@@ -549,7 +575,8 @@ assembler.recipeBuilder()
 // Farm Gearbox
 recipes.remove(<forestry:ffarm:2>.withTag({FarmBlock: 5}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel> *4, <forestry:thermionic_tubes:4> *4, motorLv, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:sandstone:1>])
+	.inputs([<ore:gearSteel> *4, <forestry:thermionic_tubes:4> *4, motorLv, <forestry:ffarm>.withTag({FarmBlock: 5})])
+	.circuit(6)
 	.outputs(<forestry:ffarm:2>.withTag({FarmBlock: 5}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -557,7 +584,8 @@ assembler.recipeBuilder()
 // Farm Hatch
 recipes.remove(<forestry:ffarm:3>.withTag({FarmBlock: 5}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:1> *4, conveyorLv *2, motorLv, <minecraft:hopper>, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:sandstone:1>])
+	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:1> *4, conveyorLv *2, motorLv, <minecraft:hopper>, <forestry:ffarm>.withTag({FarmBlock: 5})])
+	.circuit(6)
 	.outputs(<forestry:ffarm:3>.withTag({FarmBlock: 5}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -565,7 +593,8 @@ assembler.recipeBuilder()
 // Farm Valve
 recipes.remove(<forestry:ffarm:4>.withTag({FarmBlock: 5}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:11> *4, pumpLv *2, motorLv, <ore:ringRubber>, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:sandstone:1>])
+	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:11> *4, pumpLv *2, motorLv, <ore:ringRubber>, <forestry:ffarm>.withTag({FarmBlock: 5})])
+	.circuit(6)
 	.outputs(<forestry:ffarm:4>.withTag({FarmBlock: 5}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -573,7 +602,8 @@ assembler.recipeBuilder()
 // Farm Control
 recipes.remove(<forestry:ffarm:5>.withTag({FarmBlock: 5}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:4>, <ore:circuitLv> *2, motorLv, <ore:cableGtSingleTin>, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:sandstone:1>])
+	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:4>, <ore:circuitLv> *2, motorLv, <ore:cableGtSingleTin>, <forestry:ffarm>.withTag({FarmBlock: 5})])
+	.circuit(6)
 	.outputs(<forestry:ffarm:5>.withTag({FarmBlock: 5}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -584,6 +614,7 @@ assembler.recipeBuilder()
 recipes.remove(<forestry:ffarm>.withTag({FarmBlock: 6}));
 assembler.recipeBuilder()
 	.inputs([<ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:nether_brick>])
+	.circuit(7)
 	.outputs(<forestry:ffarm>.withTag({FarmBlock: 6}))
 	.fluidInputs([<liquid:creosote> *500])
 	.duration(200).EUt(30).buildAndRegister();
@@ -591,7 +622,8 @@ assembler.recipeBuilder()
 // Farm Gearbox
 recipes.remove(<forestry:ffarm:2>.withTag({FarmBlock: 6}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel> *4, <forestry:thermionic_tubes:4> *4, motorLv, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:nether_brick>])
+	.inputs([<ore:gearSteel> *4, <forestry:thermionic_tubes:4> *4, motorLv, <forestry:ffarm>.withTag({FarmBlock: 6})])
+	.circuit(7)
 	.outputs(<forestry:ffarm:2>.withTag({FarmBlock: 6}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -599,7 +631,8 @@ assembler.recipeBuilder()
 // Farm Hatch
 recipes.remove(<forestry:ffarm:3>.withTag({FarmBlock: 6}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:1> *4, conveyorLv *2, motorLv, <minecraft:hopper>, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:nether_brick>])
+	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:1> *4, conveyorLv *2, motorLv, <minecraft:hopper>, <forestry:ffarm>.withTag({FarmBlock: 6})])
+	.circuit(7)
 	.outputs(<forestry:ffarm:3>.withTag({FarmBlock: 6}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -607,7 +640,8 @@ assembler.recipeBuilder()
 // Farm Valve
 recipes.remove(<forestry:ffarm:4>.withTag({FarmBlock: 6}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:11> *4, pumpLv *2, motorLv, <ore:ringRubber>, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:nether_brick>])
+	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:11> *4, pumpLv *2, motorLv, <ore:ringRubber>, <forestry:ffarm>.withTag({FarmBlock: 6})])
+	.circuit(7)
 	.outputs(<forestry:ffarm:4>.withTag({FarmBlock: 6}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -615,7 +649,8 @@ assembler.recipeBuilder()
 // Farm Control
 recipes.remove(<forestry:ffarm:5>.withTag({FarmBlock: 6}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:4>, <ore:circuitLv> *2, motorLv, <ore:cableGtSingleTin>, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:nether_brick>])
+	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:4>, <ore:circuitLv> *2, motorLv, <ore:cableGtSingleTin>, <forestry:ffarm>.withTag({FarmBlock: 6})])
+	.circuit(7)
 	.outputs(<forestry:ffarm:5>.withTag({FarmBlock: 6}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -626,6 +661,7 @@ assembler.recipeBuilder()
 recipes.remove(<forestry:ffarm>.withTag({FarmBlock: 7}));
 assembler.recipeBuilder()
 	.inputs([<ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:stonebrick:3>])
+	.circuit(8)
 	.outputs(<forestry:ffarm>.withTag({FarmBlock: 7}))
 	.fluidInputs([<liquid:creosote> *500])
 	.duration(200).EUt(30).buildAndRegister();
@@ -633,7 +669,8 @@ assembler.recipeBuilder()
 // Farm Gearbox
 recipes.remove(<forestry:ffarm:2>.withTag({FarmBlock: 7}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel> *4, <forestry:thermionic_tubes:4> *4, motorLv, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:stonebrick:3>])
+	.inputs([<ore:gearSteel> *4, <forestry:thermionic_tubes:4> *4, motorLv, <forestry:ffarm>.withTag({FarmBlock: 7})])
+	.circuit(8)
 	.outputs(<forestry:ffarm:2>.withTag({FarmBlock: 7}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -641,7 +678,8 @@ assembler.recipeBuilder()
 // Farm Hatch
 recipes.remove(<forestry:ffarm:3>.withTag({FarmBlock: 7}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:1> *4, conveyorLv *2, motorLv, <minecraft:hopper>, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:stonebrick:3>])
+	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:1> *4, conveyorLv *2, motorLv, <minecraft:hopper>, <forestry:ffarm>.withTag({FarmBlock: 7})])
+	.circuit(8)
 	.outputs(<forestry:ffarm:3>.withTag({FarmBlock: 7}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -649,7 +687,8 @@ assembler.recipeBuilder()
 // Farm Valve
 recipes.remove(<forestry:ffarm:4>.withTag({FarmBlock: 7}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:11> *4, pumpLv *2, motorLv, <ore:ringRubber>, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:stonebrick:3>])
+	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:11> *4, pumpLv *2, motorLv, <ore:ringRubber>, <forestry:ffarm>.withTag({FarmBlock: 7})])
+	.circuit(8)
 	.outputs(<forestry:ffarm:4>.withTag({FarmBlock: 7}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -657,7 +696,8 @@ assembler.recipeBuilder()
 // Farm Control
 recipes.remove(<forestry:ffarm:5>.withTag({FarmBlock: 7}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:4>, <ore:circuitLv> *2, motorLv, <ore:cableGtSingleTin>, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:stonebrick:3>])
+	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:4>, <ore:circuitLv> *2, motorLv, <ore:cableGtSingleTin>, <forestry:ffarm>.withTag({FarmBlock: 7})])
+	.circuit(8)
 	.outputs(<forestry:ffarm:5>.withTag({FarmBlock: 7}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -668,6 +708,7 @@ assembler.recipeBuilder()
 recipes.remove(<forestry:ffarm>.withTag({FarmBlock: 8}));
 assembler.recipeBuilder()
 	.inputs([<ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:quartz_block>])
+	.circuit(9)
 	.outputs(<forestry:ffarm>.withTag({FarmBlock: 8}))
 	.fluidInputs([<liquid:creosote> *500])
 	.duration(200).EUt(30).buildAndRegister();
@@ -675,7 +716,8 @@ assembler.recipeBuilder()
 // Farm Gearbox
 recipes.remove(<forestry:ffarm:2>.withTag({FarmBlock: 8}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel> *4, <forestry:thermionic_tubes:4> *4, motorLv, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:quartz_block>])
+	.inputs([<ore:gearSteel> *4, <forestry:thermionic_tubes:4> *4, motorLv, <forestry:ffarm>.withTag({FarmBlock: 8})])
+	.circuit(9)
 	.outputs(<forestry:ffarm:2>.withTag({FarmBlock: 8}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -683,7 +725,8 @@ assembler.recipeBuilder()
 // Farm Hatch
 recipes.remove(<forestry:ffarm:3>.withTag({FarmBlock: 8}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:1> *4, conveyorLv *2, motorLv, <minecraft:hopper>, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:quartz_block>])
+	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:1> *4, conveyorLv *2, motorLv, <minecraft:hopper>, <forestry:ffarm>.withTag({FarmBlock: 8})])
+	.circuit(9)
 	.outputs(<forestry:ffarm:3>.withTag({FarmBlock: 8}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -691,7 +734,8 @@ assembler.recipeBuilder()
 // Farm Valve
 recipes.remove(<forestry:ffarm:4>.withTag({FarmBlock: 8}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:11> *4, pumpLv *2, motorLv, <ore:ringRubber>, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:quartz_block>])
+	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:11> *4, pumpLv *2, motorLv, <ore:ringRubber>, <forestry:ffarm>.withTag({FarmBlock: 8})])
+	.circuit(9)
 	.outputs(<forestry:ffarm:4>.withTag({FarmBlock: 8}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -699,7 +743,8 @@ assembler.recipeBuilder()
 // Farm Control
 recipes.remove(<forestry:ffarm:5>.withTag({FarmBlock: 8}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:4>, <ore:circuitLv> *2, motorLv, <ore:cableGtSingleTin>, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:quartz_block>])
+	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:4>, <ore:circuitLv> *2, motorLv, <ore:cableGtSingleTin>, <forestry:ffarm>.withTag({FarmBlock: 8})])
+	.circuit(9)
 	.outputs(<forestry:ffarm:5>.withTag({FarmBlock: 8}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -709,6 +754,7 @@ assembler.recipeBuilder()
 recipes.remove(<forestry:ffarm>.withTag({FarmBlock: 9}));
 assembler.recipeBuilder()
 	.inputs([<ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:quartz_block:1>])
+	.circuit(10)
 	.outputs(<forestry:ffarm>.withTag({FarmBlock: 9}))
 	.fluidInputs([<liquid:creosote> *500])
 	.duration(200).EUt(30).buildAndRegister();
@@ -716,7 +762,8 @@ assembler.recipeBuilder()
 // Farm Gearbox
 recipes.remove(<forestry:ffarm:2>.withTag({FarmBlock: 9}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel> *4, <forestry:thermionic_tubes:4> *4, motorLv, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:quartz_block:1>])
+	.inputs([<ore:gearSteel> *4, <forestry:thermionic_tubes:4> *4, motorLv, <forestry:ffarm>.withTag({FarmBlock: 9})])
+	.circuit(10)
 	.outputs(<forestry:ffarm:2>.withTag({FarmBlock: 9}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -724,7 +771,8 @@ assembler.recipeBuilder()
 // Farm Hatch
 recipes.remove(<forestry:ffarm:3>.withTag({FarmBlock: 9}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:1> *4, conveyorLv *2, motorLv, <minecraft:hopper>, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:quartz_block:1>])
+	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:1> *4, conveyorLv *2, motorLv, <minecraft:hopper>, <forestry:ffarm>.withTag({FarmBlock: 9})])
+	.circuit(10)
 	.outputs(<forestry:ffarm:3>.withTag({FarmBlock: 9}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -732,7 +780,8 @@ assembler.recipeBuilder()
 // Farm Valve
 recipes.remove(<forestry:ffarm:4>.withTag({FarmBlock: 9}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:11> *4, pumpLv *2, motorLv, <ore:ringRubber>, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:quartz_block:1>])
+	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:11> *4, pumpLv *2, motorLv, <ore:ringRubber>, <forestry:ffarm>.withTag({FarmBlock: 9})])
+	.circuit(10)
 	.outputs(<forestry:ffarm:4>.withTag({FarmBlock: 9}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -740,7 +789,8 @@ assembler.recipeBuilder()
 // Farm Control
 recipes.remove(<forestry:ffarm:5>.withTag({FarmBlock: 9}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:4>, <ore:circuitLv> *2, motorLv, <ore:cableGtSingleTin>, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:quartz_block:1>])
+	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:4>, <ore:circuitLv> *2, motorLv, <ore:cableGtSingleTin>, <forestry:ffarm>.withTag({FarmBlock: 9})])
+	.circuit(10)
 	.outputs(<forestry:ffarm:5>.withTag({FarmBlock: 9}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -751,6 +801,7 @@ assembler.recipeBuilder()
 recipes.remove(<forestry:ffarm>.withTag({FarmBlock: 10}));
 assembler.recipeBuilder()
 	.inputs([<ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:quartz_block:2>])
+	.circuit(11)
 	.outputs(<forestry:ffarm>.withTag({FarmBlock: 10}))
 	.fluidInputs([<liquid:creosote> *500])
 	.duration(200).EUt(30).buildAndRegister();
@@ -758,7 +809,8 @@ assembler.recipeBuilder()
 // Farm Gearbox
 recipes.remove(<forestry:ffarm:2>.withTag({FarmBlock: 10}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel> *4, <forestry:thermionic_tubes:4> *4, motorLv, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:quartz_block:2>])
+	.inputs([<ore:gearSteel> *4, <forestry:thermionic_tubes:4> *4, motorLv, <forestry:ffarm>.withTag({FarmBlock: 10})])
+	.circuit(11)
 	.outputs(<forestry:ffarm:2>.withTag({FarmBlock: 10}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -766,7 +818,8 @@ assembler.recipeBuilder()
 // Farm Hatch
 recipes.remove(<forestry:ffarm:3>.withTag({FarmBlock: 10}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:1> *4, conveyorLv *2, motorLv, <minecraft:hopper>, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:quartz_block:2>])
+	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:1> *4, conveyorLv *2, motorLv, <minecraft:hopper>, <forestry:ffarm>.withTag({FarmBlock: 10})])
+	.circuit(11)
 	.outputs(<forestry:ffarm:3>.withTag({FarmBlock: 10}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -774,7 +827,8 @@ assembler.recipeBuilder()
 // Farm Valve
 recipes.remove(<forestry:ffarm:4>.withTag({FarmBlock: 10}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:11> *4, pumpLv *2, motorLv, <ore:ringRubber>, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:quartz_block:2>])
+	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:11> *4, pumpLv *2, motorLv, <ore:ringRubber>, <forestry:ffarm>.withTag({FarmBlock: 10})])
+	.circuit(11)
 	.outputs(<forestry:ffarm:4>.withTag({FarmBlock: 10}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -782,7 +836,8 @@ assembler.recipeBuilder()
 // Farm Control
 recipes.remove(<forestry:ffarm:5>.withTag({FarmBlock: 10}));
 assembler.recipeBuilder()
-	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:4>, <ore:circuitLv> *2, motorLv, <ore:cableGtSingleTin>, <ore:screwSteel> *4, <ore:plateCopper> *4, <forestry:thermionic_tubes:10>, <minecraft:quartz_block:2>])
+	.inputs([<ore:gearSteel>, <forestry:thermionic_tubes:4>, <ore:circuitLv> *2, motorLv, <ore:cableGtSingleTin>, <forestry:ffarm>.withTag({FarmBlock: 10})])
+	.circuit(11)
 	.outputs(<forestry:ffarm:5>.withTag({FarmBlock: 10}) *2)
 	.fluidInputs([<liquid:creosote> *1500])
 	.duration(1000).EUt(30).buildAndRegister();
@@ -801,7 +856,7 @@ recipes.addShaped(<forestry:raintank>,
 	[[<ore:ingotIron>, <ore:blockGlass>, <ore:ingotIron>], 
 	[<ore:ingotIron>, <gregtech:machine:1612>, <ore:ingotIron>], 
 	[<ore:ingotIron>, <ore:blockGlass>, <ore:ingotIron>]]);
-	
+
 // Grafter
 recipes.remove(<forestry:grafter>);
 recipes.addShaped(<forestry:grafter>, 

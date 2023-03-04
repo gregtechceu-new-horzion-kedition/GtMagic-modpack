@@ -7,6 +7,28 @@ recipes.removeByMod("enderio");
 recipes.removeByMod("endercore");
 furnace.remove(<enderio:item_alloy_ingot:*>);
 
+//JEI
+mods.jei.JEI.removeAndHide(<enderio:item_alloy_ball:*>);
+mods.jei.JEI.removeAndHide(<enderio:item_alloy_endergy_ball:*>);
+mods.jei.JEI.removeAndHide(<enderio:item_material:81>);
+mods.jei.JEI.removeAndHide(<enderio:block_death_pouch>);
+mods.jei.JEI.removeAndHide(<enderio:item_material:9>);
+mods.jei.JEI.removeAndHide(<enderio:item_material:10>);
+mods.jei.JEI.removeAndHide(<enderio:item_material:11>);
+mods.jei.JEI.removeAndHide(<enderio:item_material:12>);
+mods.jei.JEI.removeAndHide(<enderio:item_material:13>);
+mods.jei.JEI.removeAndHide(<enderio:item_material:73>);
+
+mods.jei.JEI.removeAndHide(<enderio:item_material>);
+
+mods.jei.JEI.removeAndHide(<enderio:block_sag_mill>);
+mods.jei.JEI.removeAndHide(<enderio:block_simple_sag_mill>);
+mods.jei.JEI.removeAndHide(<enderio:block_enhanced_sag_mill>);
+
+mods.jei.JEI.removeAndHide(<enderio:block_alloy_smelter>);
+mods.jei.JEI.removeAndHide(<enderio:block_simple_alloy_smelter>);
+mods.jei.JEI.removeAndHide(<enderio:block_enhanced_alloy_smelter>);
+
 //Soul Binder
 recipes.addShaped(<enderio:block_soul_binder>, [[<ore:plateSoularium>, <ore:skullEnderResonator>, <ore:plateSoularium>],[<ore:circuitHv>, <enderio:item_material:53>, <ore:circuitHv>], [<gregtech:meta_item_1:129>, <ore:skullZombieController>, <gregtech:meta_item_1:129>]]);
 
@@ -63,9 +85,6 @@ recipes.addShaped(<enderio:block_cap_bank:2>, [[<enderio:item_basic_capacitor:1>
 
 //Capacitor Tier 1
 recipes.addShaped(<enderio:block_cap_bank:1>, [[<enderio:item_basic_capacitor>, <ore:circuitLv>, <enderio:item_basic_capacitor>],[<ore:plateRedstone>, <enderio:item_material:1>, <ore:plateRedstone>], [<enderio:item_basic_capacitor>, <gregtech:meta_item_1:739>, <enderio:item_basic_capacitor>]]);
-
-//SAG mill
-recipes.addShaped(<enderio:block_sag_mill>, [[<ore:plateSteel>, <gregtech:meta_item_1:172>, <ore:plateSteel>],[<ore:circuitLv>, <enderio:item_material:1>, <ore:circuitLv>], [<gregtech:meta_item_1:127>, <gregtech:meta_item_1:266>, <gregtech:meta_item_1:127>]]);
 
 //Solar Panel Tier 3
 recipes.addShaped(<enderio:block_solar_panel:3>, [[<ore:plateEndSteel>, <appliedenergistics2:quartz_glass>, <ore:plateEndSteel>],[<ore:plateVibrantAlloy>, <enderio:block_solar_panel:2>, <ore:plateVibrantAlloy>], [<enderio:item_basic_capacitor:2>, <appliedenergistics2:quartz_glass>, <enderio:item_basic_capacitor:2>]]);
@@ -603,3 +622,576 @@ Melting.removeRecipe(<liquid:dark_steel>);
 Melting.removeRecipe(<liquid:end_steel>);
 Melting.removeRecipe(<liquid:vibrant_alloy>);
 Melting.removeRecipe(<liquid:pulsating_iron>);
+
+//Redstone Upgrades
+assembler.recipeBuilder()
+    .inputs([<enderio:item_basic_item_filter>, <minecraft:redstone_torch>])
+	.outputs(<enderio:item_material:60>)
+	.duration(300).EUt(64).buildAndRegister();
+    
+//Redstone Upgrades
+assembler.recipeBuilder()
+    .inputs([<enderio:item_material:60>])
+    .circuit(1)
+	.outputs(<enderio:item_redstone_not_filter>)
+	.duration(300).EUt(120).buildAndRegister();
+    
+//Redstone Upgrades
+assembler.recipeBuilder()
+    .inputs([<enderio:item_material:60>])
+    .circuit(2)
+	.outputs(<enderio:item_redstone_or_filter>)
+	.duration(300).EUt(120).buildAndRegister();
+    
+//Redstone Upgrades
+assembler.recipeBuilder()
+    .inputs([<enderio:item_material:60>])
+    .circuit(3)
+	.outputs(<enderio:item_redstone_and_filter>)
+	.duration(300).EUt(120).buildAndRegister();
+
+//Redstone Upgrades
+assembler.recipeBuilder()
+    .inputs([<enderio:item_material:60>])
+    .circuit(4)
+	.outputs(<enderio:item_redstone_nor_filter>)
+	.duration(300).EUt(120).buildAndRegister();
+
+//Redstone Upgrades
+assembler.recipeBuilder()
+    .inputs([<enderio:item_material:60>])
+    .circuit(5)
+	.outputs(<enderio:item_redstone_nand_filter>)
+	.duration(300).EUt(120).buildAndRegister();
+
+//Redstone Upgrades
+assembler.recipeBuilder()
+    .inputs([<enderio:item_material:60>])
+    .circuit(6)
+	.outputs(<enderio:item_redstone_xor_filter>)
+	.duration(300).EUt(120).buildAndRegister();
+
+//Redstone Upgrades
+assembler.recipeBuilder()
+    .inputs([<enderio:item_material:60>])
+    .circuit(7)
+	.outputs(<enderio:item_redstone_xnor_filter>)
+	.duration(300).EUt(120).buildAndRegister();
+
+//Redstone Upgrades
+assembler.recipeBuilder()
+    .inputs([<enderio:item_material:60>])
+    .circuit(8)
+	.outputs(<enderio:item_redstone_toggle_filter>)
+	.duration(300).EUt(120).buildAndRegister();
+
+//Redstone Upgrades
+assembler.recipeBuilder()
+    .inputs([<enderio:item_material:60>])
+    .circuit(9)
+	.outputs(<enderio:item_redstone_counting_filter>)
+	.duration(300).EUt(120).buildAndRegister();
+
+//Redstone Upgrades
+assembler.recipeBuilder()
+    .inputs([<enderio:item_material:60>])
+    .circuit(10)
+	.outputs(<enderio:item_redstone_sensor_filter>)
+	.duration(300).EUt(120).buildAndRegister();
+
+//Redstone Upgrades
+assembler.recipeBuilder()
+    .inputs([<enderio:item_material:60>])
+    .circuit(11)
+	.outputs(<enderio:item_redstone_timer_filter>)
+	.duration(300).EUt(120).buildAndRegister();
+
+//Conduit Upgrades
+assembler.recipeBuilder()
+    .inputs([<enderio:item_advanced_item_filter>, <enderio:block_dark_iron_bars>])
+	.outputs(<enderio:item_limited_item_filter>)
+	.duration(300).EUt(120).buildAndRegister();
+
+//Conduit Upgrades
+assembler.recipeBuilder()
+    .inputs([<enderio:item_basic_item_filter>,<tconstruct:large_plate>.withTag({Material: "xu_magical_wood"})])
+	.outputs(<enderio:item_enchantment_filter_normal>)
+	.duration(300).EUt(64).buildAndRegister();
+
+//Conduit Upgrades
+assembler.recipeBuilder()
+    .inputs([<enderio:item_big_item_filter>,<tconstruct:large_plate>.withTag({Material: "xu_enchanted_metal"})])
+	.outputs(<enderio:item_enchantment_filter_big>)
+	.duration(300).EUt(256).buildAndRegister();
+
+//conduit upgrade
+assembler.recipeBuilder()
+    .inputs([<gregtech:meta_item_1:290>, <ore:barsIron>])
+	.outputs(<enderio:item_fluid_filter>)
+	.duration(300).EUt(30).buildAndRegister();
+
+//Wired Charger
+recipes.addShaped(<enderio:block_wired_charger>, [[<ore:cableGtQuadrupleTin>, <ore:cableGtQuadrupleTin>, <ore:cableGtQuadrupleTin>],[<ore:plateElectricalSteel>, <ore:itemMachineChassi>, <ore:plateElectricalSteel>], [<ore:plateElectricalSteel>, <gregtech:machine:1316>, <ore:plateElectricalSteel>]]);
+
+//block Detector (Silent/Normal)
+recipes.addShapeless(<enderio:block_detector_block_silent>, [<enderio:block_detector_block>,<extrautils2:soundmuffler>]);
+recipes.addShaped(<enderio:block_detector_block>, [[<ore:plateIron>, <enderio:block_painted_pressure_plate:8>, <ore:plateIron>],[<ore:plateIron>, <ore:craftingPiston>, <ore:plateIron>], [<ore:plateIron>, <ore:blockRedstone>, <ore:plateIron>]]);
+
+//Xp Vacuum Chest
+recipes.addShaped(<enderio:block_xp_vacuum>, [[<ore:plateElectricalSteel>, <ore:plateElectricalSteel>, <ore:plateElectricalSteel>],[<ore:plateElectricalSteel>, <enderio:item_xp_transfer>, <ore:plateElectricalSteel>], [<ore:plateElectricalSteel>, <ore:itemVibrantCrystal>, <ore:plateElectricalSteel>]]);
+
+//Vacuum Chest
+recipes.addShaped(<enderio:block_vacuum_chest>, [[<ore:plateElectricalSteel>, <ore:plateElectricalSteel>, <ore:plateElectricalSteel>],[<ore:plateElectricalSteel>, <openblocks:vacuum_hopper>, <ore:plateElectricalSteel>], [<ore:plateElectricalSteel>, <ore:itemPulsatingCrystal>, <ore:plateElectricalSteel>]]);
+
+//Impulse Hopper
+recipes.addShaped(<enderio:block_impulse_hopper>, [[<ore:plateElectricalSteel>, <minecraft:hopper>, <ore:plateElectricalSteel>],[<ore:plateDoubleEnergeticAlloy>, <ore:itemMachineChassi>, <ore:plateDoubleEnergeticAlloy>], [<ore:plateElectricalSteel>, <ore:plateRedstoneAlloy>, <ore:plateElectricalSteel>]]);
+
+//Wireless Charger Extension
+recipes.addShaped(<enderio:block_wireless_charger_extension>, [[<ore:screwElectricalSteel>, <ore:itemWirelessDish>, <ore:screwElectricalSteel>],[<ore:itemWirelessDish>, <gregtech:meta_item_1:235>, <ore:itemWirelessDish>], [<ore:screwElectricalSteel>, <ore:itemWirelessDish>, <ore:screwElectricalSteel>]]);
+
+//Enhanced Wireless Charger
+recipes.addShaped(<enderio:block_enhanced_wireless_charger>, [[<ore:plateElectricalSteel>, <ore:itemWirelessDish>, <ore:plateElectricalSteel>],[<ore:itemWirelessDish>, <enderio:block_wireless_charger>, <ore:itemWirelessDish>], [<ore:plateElectricalSteel>, <enderio:item_basic_capacitor:2>, <ore:plateElectricalSteel>]]);
+
+//Wireless Charger Normal
+recipes.addShaped(<enderio:block_normal_wireless_charger>, [[<ore:plateElectricalSteel>, <ore:itemWirelessDish>, <ore:plateElectricalSteel>],[<ore:itemWirelessDish>, <enderio:block_wireless_charger>, <ore:itemWirelessDish>], [<ore:plateElectricalSteel>, <enderio:item_basic_capacitor:1>, <ore:plateElectricalSteel>]]);
+
+//Wireless Dish
+recipes.addShapeless(<enderio:item_material:65>, [<ore:plateElectricalSteel>,<gregtech:meta_item_1:234>,<ore:plateElectricalSteel>,<ore:plateElectricalSteel>]);
+
+//Inventory Item Charger
+assembler.recipeBuilder()
+    .inputs([<enderio:item_basic_capacitor>, <ore:plateDarkSteel> * 2])
+    .fluidInputs(<liquid:conductive_iron> * 576)
+	.outputs(<enderio:item_fluid_filter>)
+	.duration(400).EUt(120).buildAndRegister();
+
+//Inventory Item Charger
+assembler.recipeBuilder()
+    .inputs([<ore:skullEnderResonator>, <ore:itemWirelessDish> * 2, <enderio:block_cap_bank:1>])
+    .fluidInputs(<liquid:dark_steel> * 576)
+	.outputs(<enderio:item_inventory_charger_basic>)
+	.duration(400).EUt(256).buildAndRegister();
+
+//Inventory Item Charger
+assembler.recipeBuilder()
+    .inputs([<ore:skullEnderResonator>, <ore:itemWirelessDish> * 2, <enderio:block_cap_bank:2>])
+    .fluidInputs(<liquid:dark_steel> * 576)
+	.outputs(<enderio:item_inventory_charger>)
+	.duration(400).EUt(480).buildAndRegister();
+
+//Inventory Item Charger
+assembler.recipeBuilder()
+    .inputs([<ore:skullEnderResonator>, <ore:itemWirelessDish> * 2, <enderio:block_cap_bank:3>])
+    .fluidInputs(<liquid:dark_steel> * 576)
+	.outputs(<enderio:item_inventory_charger_vibrant>)
+	.duration(400).EUt(600).buildAndRegister();
+
+//Crystal Dust
+macerator.recipeBuilder()
+    .inputs([<ore:itemPulsatingCrystal>])
+	.outputs(<ore:itemPulsatingPowder>.firstItem)
+	.duration(60).EUt(600).buildAndRegister();
+
+macerator.recipeBuilder()
+    .inputs([<ore:itemVibrantCrystal>])
+	.outputs(<ore:itemVibrantPowder>.firstItem)
+	.duration(60).EUt(600).buildAndRegister();
+
+macerator.recipeBuilder()
+    .inputs([<ore:itemEnderCrystal>])
+	.outputs(<ore:itemEnderCrystalPowder>.firstItem)
+	.duration(60).EUt(600).buildAndRegister();
+
+macerator.recipeBuilder()
+    .inputs([<ore:itemPrecientCrystal>])
+	.outputs(<ore:itemPrecientPowder>.firstItem)
+	.duration(60).EUt(600).buildAndRegister();
+
+recipes.addShaped(<enderio:item_dark_steel_helmet>, 
+	[[<ore:plateDarkSteel>, <ore:plateDarkSteel>, <ore:plateDarkSteel>],
+	[<ore:plateDarkSteel>, <ore:gtceHardHammers>, <ore:plateDarkSteel>],
+	]);
+	
+recipes.addShaped(<enderio:item_dark_steel_chestplate>, 
+	[[<ore:plateDarkSteel>, <ore:gtceHardHammers>, <ore:plateDarkSteel>],
+	[<ore:plateDarkSteel>, <ore:plateDarkSteel>, <ore:plateDarkSteel>],
+	[<ore:plateDarkSteel>, <ore:plateDarkSteel>, <ore:plateDarkSteel>]]);
+
+recipes.addShaped(<enderio:item_dark_steel_leggings>, 
+	[[<ore:plateDarkSteel>, <ore:plateDarkSteel>, <ore:plateDarkSteel>],
+	[<ore:plateDarkSteel>, <ore:gtceHardHammers>, <ore:plateDarkSteel>],
+	[<ore:plateDarkSteel>, null, <ore:plateDarkSteel>]]);
+
+recipes.addShaped(<enderio:item_dark_steel_boots>, 
+	[[<ore:plateDarkSteel>, null, <ore:plateDarkSteel>],
+	[<ore:plateDarkSteel>, <ore:gtceHardHammers>, <ore:plateDarkSteel>],
+	]);
+
+recipes.addShaped(<enderio:item_dark_steel_axe>, 
+	[[<ore:plateDarkSteel>, <ore:ingotDarkSteel>, <ore:gtceHardHammers>],
+	[<ore:plateDarkSteel>, <ore:stickWood>],
+	[<ore:gtceFiles>, <ore:stickWood>]]);
+
+recipes.addShaped(<enderio:item_dark_steel_sword>, 
+	[[null, <ore:plateDarkSteel>, null],
+	[<ore:gtceFiles>, <ore:plateDarkSteel>, <ore:gtceHardHammers>],
+	[null, <ore:stickWood>, null]]);
+
+recipes.addShaped(<enderio:item_dark_steel_pickaxe>, 
+	[[<ore:plateDarkSteel>, <ore:ingotDarkSteel>, <ore:ingotDarkSteel>],
+	[<ore:gtceFiles>, <ore:stickWood>, <ore:gtceHardHammers>],
+	[null, <ore:stickWood>, null]]);
+
+recipes.addShaped(<enderio:item_dark_steel_crook>, 
+	[[<ore:plateDarkSteel>, <ore:ingotDarkSteel>, <ore:gtceHardHammers>],
+	[<ore:gtceFiles>, <ore:stickWood>, null],
+	[null, <ore:stickWood>, null]]);
+
+recipes.addShaped(<enderio:item_dark_steel_shears>, 
+	[[<ore:plateDarkSteel>, <ore:screwDarkSteel>, <ore:plateDarkSteel>],
+	[<ore:gtceFiles>, <ore:ringDarkSteel>, <ore:gtceHardHammers>],
+	[<ore:stickWood>, <ore:gtceScrewdrivers>, <ore:stickWood>]]);
+
+recipes.addShaped(<enderio:item_dark_steel_shield>, 
+	[[<ore:boltDarkSteel>, <ore:stickDarkSteel>, <ore:boltDarkSteel>],
+	[<ore:stickDarkSteel>, <ore:plateDarkSteel>, <ore:stickDarkSteel>],
+	[<ore:boltDarkSteel>, <ore:stickDarkSteel>, <ore:boltDarkSteel>]]);
+
+recipes.addShaped(<enderio:item_end_steel_helmet>, 
+	[[<ore:plateEndSteel>, <ore:plateEndSteel>, <ore:plateEndSteel>],
+	[<ore:plateEndSteel>, <ore:skullGuardianDiode>, <ore:plateEndSteel>],
+    [null, <ore:gtceHardHammers>, null]
+	]);
+	
+recipes.addShaped(<enderio:item_end_steel_chestplate>, 
+	[[<ore:plateEndSteel>, <ore:gtceHardHammers>, <ore:plateEndSteel>],
+	[<ore:plateEndSteel>, <ore:skullGuardianDiode>, <ore:plateEndSteel>],
+	[<ore:plateEndSteel>, <ore:plateEndSteel>, <ore:plateEndSteel>]]);
+
+recipes.addShaped(<enderio:item_end_steel_leggings>, 
+	[[<ore:plateEndSteel>, <ore:plateEndSteel>, <ore:plateEndSteel>],
+	[<ore:plateEndSteel>, <ore:skullGuardianDiode>, <ore:plateEndSteel>],
+	[<ore:plateEndSteel>, <ore:gtceHardHammers>, <ore:plateEndSteel>]]);
+
+recipes.addShaped(<enderio:item_end_steel_boots>, 
+	[[<ore:plateEndSteel>, <ore:skullGuardianDiode>, <ore:plateEndSteel>],
+	[<ore:plateEndSteel>, <ore:gtceHardHammers>, <ore:plateEndSteel>],
+	]);
+
+recipes.addShaped(<enderio:item_end_steel_axe>, 
+	[[<ore:plateEndSteel>, <ore:ingotEndSteel>, <ore:gtceHardHammers>],
+	[<ore:plateEndSteel>, <ore:stickDarkSteel>],
+	[<ore:gtceFiles>, <ore:stickDarkSteel>]]);
+
+recipes.addShaped(<enderio:item_end_steel_sword>, 
+	[[null, <ore:plateEndSteel>, null],
+	[<ore:gtceFiles>, <ore:plateEndSteel>, <ore:gtceHardHammers>],
+	[null, <ore:stickDarkSteel>, null]]);
+
+recipes.addShaped(<enderio:item_end_steel_pickaxe>, 
+	[[<ore:plateEndSteel>, <ore:ingotEndSteel>, <ore:ingotEndSteel>],
+	[<ore:gtceFiles>, <ore:stickDarkSteel>, <ore:gtceHardHammers>],
+	[null, <ore:stickDarkSteel>, null]]);
+
+recipes.addShaped(<enderio:item_end_steel_shield>, 
+	[[<ore:boltEndSteel>, <ore:stickEndSteel>, <ore:boltEndSteel>],
+	[<ore:stickEndSteel>, <ore:plateEndSteel>, <ore:stickEndSteel>],
+	[<ore:boltEndSteel>, <ore:stickEndSteel>, <ore:boltEndSteel>]]);
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_basic_item_filter>, <enderio:block_dark_iron_bars>])
+	.outputs(<enderio:item_dark_steel_upgrade>)
+	.duration(300).EUt(60).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <enderio:block_solar_panel:1>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiomachines:solar1"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <enderio:block_solar_panel:2>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiomachines:solar2"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <enderio:block_solar_panel:3>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiomachines:solar3"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <forestry:apiarist_helmet>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:apiarist_armor_head"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <forestry:apiarist_chest>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:apiarist_armor_chest"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <forestry:apiarist_legs>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:apiarist_armor_legs"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <forestry:apiarist_boots>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:apiarist_armor_feet"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <thaumcraft:goggles>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:gogglesofrevealing"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <thaumcraft:cloth_chest>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:thaumaturge_robes_chest"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <thaumcraft:cloth_legs>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:thaumaturge_robes_legs"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <thaumcraft:cloth_boots>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:thaumaturge_robes_feet"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <enderio:item_magnet>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:direct"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <minecraft:fish:2>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:swim"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <tconstruct:materials:13>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:depth"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <minecraft:golden_shovel>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:spoon"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <ore:itemGliderWings>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:glide"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <extrautils2:soundmuffler>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:padding"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <minecraft:golden_hoe>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:hoe"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <openblocks:sonic_glasses>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:sounddetector"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <forestry:naturalist_helmet>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:naturalist_eye"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <theoneprobe:probe>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:top"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <minecraft:elytra>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:elytra"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <gregtech:gt_armor:1>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:step_assist"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <tconstruct:large_plate>.withTag({Material: "cobalt"})])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:nightvision"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <tconstruct:materials:12>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:carpet"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <enderio:item_travel_staff>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:travel"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <minecraft:tnt>, <ore:gearIron>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:tnt"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <minecraft:tnt>, <ore:gearSteel>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:tnt1"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <minecraft:tnt>, <ore:gearStainlessSteel>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:tnt2"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <minecraft:tnt>, <ore:gearTitanium>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:tnt3"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <minecraft:tnt>, <ore:gearTungstenSteel>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:tnt4"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <enderio:block_enderman_skull:2>, <ore:gearIron>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:energyupgrade"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <enderio:block_enderman_skull:2>, <ore:gearSteel>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:energyupgrade1"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <enderio:block_enderman_skull:2>, <ore:gearStainlessSteel>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:energyupgrade2"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <enderio:block_enderman_skull:2>, <ore:gearTitanium>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:energyupgrade3"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <enderio:block_enderman_skull:2>, <ore:gearTungstenSteel>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:energyupgrade4"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <gregtech:meta_item_1:172>, <ore:gearIron>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:jumpboost1"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <gregtech:meta_item_1:172>, <ore:gearEnergeticAlloy>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:jumpboost2"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <gregtech:meta_item_1:172>, <ore:gearVibrantAlloy>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:jumpboost3"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <gregtechfoodoption:gtfo_meta_item:16>, <ore:gearIron>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:speedboost1"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <gregtechfoodoption:gtfo_meta_item:16>, <ore:gearEnergeticAlloy>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:speedboost2"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <gregtechfoodoption:gtfo_meta_item:16>, <ore:gearVibrantAlloy>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:speedboost3"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <enderio:block_dark_steel_anvil>, <ore:gearIron>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:anvil"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <enderio:block_dark_steel_anvil>, <ore:gearEnergeticAlloy>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:anvil1"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <enderio:block_dark_steel_anvil>, <ore:gearVibrantAlloy>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:anvil2"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <minecraft:purple_shulker_box>, <ore:gearIron>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:inv"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <minecraft:purple_shulker_box>, <ore:gearEnergeticAlloy>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:inv1"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<enderio:item_dark_steel_upgrade>, <minecraft:purple_shulker_box>, <ore:gearVibrantAlloy>])
+	.outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:inv2"}))
+	.duration(300).EUt(120).buildAndRegister();
+
+fluid_solidifier.recipeBuilder()
+    .fluidInputs(<liquid:dark_steel> * 4464)
+    .notConsumable(<gregtech:meta_item_1:21>)
+	.outputs(<enderio:block_dark_steel_anvil>)
+	.duration(1680).EUt(16).buildAndRegister();
+
+recipes.addShaped(<enderio:item_magnet>,
+	[[<ore:plateElectricalSteel>, <ore:plateConductiveIron>, <ore:plateConductiveIron>],
+	[<ore:toolWrench>, <enderio:item_basic_capacitor:2>, <ore:itemVibrantCrystal>],
+	[<ore:plateElectricalSteel>, <ore:plateConductiveIron>, <ore:plateConductiveIron>]]);
+
+chemical_bath.recipeBuilder()
+    .fluidInputs(<liquid:nutrient_distillation> * 72)
+    .inputs(<ore:stickTreatedWood>)
+	.outputs(<enderio:item_material:8>)
+	.duration(30).EUt(64).buildAndRegister();
+
+recipes.addShaped(<enderio:item_dark_steel_bow>, 
+	[[<ore:gtceHardHammers>, <ore:itemNutritiousStick>, <ore:wireFineDarkSteel>],
+	[<ore:itemNutritiousStick>, <ore:ringDarkSteel>, <ore:wireFineDarkSteel>],
+	[<ore:gtceFiles>, <ore:itemNutritiousStick>, <ore:wireFineDarkSteel>]]);
+
+recipes.addShaped(<enderio:item_end_steel_bow>, 
+	[[<ore:gtceHardHammers>, <ore:stickEndSteel>, <ore:wireFineDarkSteel>],
+	[<ore:stickEndSteel>, <enderio:item_dark_steel_bow>, <ore:wireFineDarkSteel>],
+	[<ore:gtceFiles>, <ore:stickEndSteel>, <ore:wireFineDarkSteel>]]);
+
+//conduit upgrade
+assembler.recipeBuilder()
+    .inputs([<enderio:item_advanced_item_filter>, <forestry:portable_alyzer>])
+	.outputs(<enderio:item_species_item_filter>)
+	.duration(300).EUt(120).buildAndRegister();
+
+//Conduit Facade
+assembler.recipeBuilder()
+    .inputs([<ore:itemConduitBinder> * 8, <appliedenergistics2:quartz_glass>])
+    .circuit(8)
+	.outputs(<enderio:item_conduit_facade:2>)
+	.duration(100).EUt(30).buildAndRegister();
+
+//Conduit Facade
+chemical_bath.recipeBuilder()
+    .inputs([<enderio:item_conduit_facade:2>])
+    .fluidInputs(<liquid:obsidian> * 576)
+	.outputs(<enderio:item_conduit_facade:3>)
+	.duration(200).EUt(2).buildAndRegister();
+
+//Darksteel Hoe
+recipes.addShaped(<enderio:item_dark_steel_hand>, 
+	[[<ore:screwDarkSteel>, <ore:screwDarkSteel>, <ore:stickWood>],
+	[<ore:screwDarkSteel>, <ore:screwDarkSteel>, <ore:stickWood>],
+	[null, null, <ore:stickWood>]]);

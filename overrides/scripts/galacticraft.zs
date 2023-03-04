@@ -187,7 +187,7 @@ assembler.recipeBuilder()
     .EUt(16)
     .buildAndRegister();
 
-//remove ingot crafting
+//remove ingot craft
 recipes.remove(<galacticraftcore:basic_item:5>);
 recipes.remove(<galacticraftcore:basic_item:4>);
 recipes.remove(<galacticraftcore:basic_item:3>);
@@ -197,6 +197,7 @@ recipes.remove(<galacticraftplanets:item_basic_asteroids>);
 recipes.remove(<galacticraftplanets:item_basic_mars:2>);
 recipes.remove(<galacticraftplanets:basic_item_venus:1>);
 recipes.remove(<galacticraftcore:item_basic_moon>);
+furnace.remove(<galacticraftcore:item_basic_moon>);
 
 furnace.remove(<galacticraftplanets:basic_item_venus:1>);
 furnace.remove(<ore:ingotMeteoricIron>);
@@ -766,15 +767,15 @@ recipes.addShaped(<galacticraftcore:rocket_fins>, [[<ore:gtceHardHammers>, <ore:
 
 //nose cone
 recipes.remove(<galacticraftcore:nose_cone>);
-recipes.addShaped(<galacticraftcore:nose_cone>, [[<ore:gtceHardHammers>, <randomthings:redstoneactivator>, <ore:gtceScrewdrivers>],[<ore:screwStainlessSteel>, <galacticraftcore:heavy_plating>, <ore:screwStainlessSteel>], [<galacticraftcore:heavy_plating>, <galacticraftcore:heavy_plating>, <galacticraftcore:heavy_plating>]]);
+recipes.addShaped(<galacticraftcore:nose_cone>, [[<ore:gtceHardHammers>, <minecraft:redstone_torch>, <ore:gtceScrewdrivers>],[<ore:screwStainlessSteel>, <galacticraftcore:heavy_plating>, <ore:screwStainlessSteel>], [<galacticraftcore:heavy_plating>, <galacticraftcore:heavy_plating>, <galacticraftcore:heavy_plating>]]);
 
 //engine
 recipes.remove(<galacticraftcore:engine>);
-recipes.addShaped(<galacticraftcore:engine>, [[<ore:compressedMeteoricIron>, <ore:compressedMeteoricIron>, <ore:compressedMeteoricIron>],[<galacticraftcore:heavy_plating>, <galacticraftcore:fuel_canister_partial:1>, <galacticraftcore:heavy_plating>], [<galacticraftcore:heavy_plating>, <galacticraftcore:air_vent>, <galacticraftcore:heavy_plating>]]);
+recipes.addShaped(<galacticraftcore:engine>, [[<galacticraftcore:basic_item:9>, <galacticraftcore:basic_item:9>, <galacticraftcore:basic_item:9>],[<galacticraftcore:heavy_plating>, <galacticraftcore:fuel_canister_partial:1>, <galacticraftcore:heavy_plating>], [<galacticraftcore:heavy_plating>, <galacticraftcore:air_vent>, <galacticraftcore:heavy_plating>]]);
 
 //oxygen concentrator
 recipes.remove(<galacticraftcore:oxygen_concentrator>);
-recipes.addShaped(<galacticraftcore:oxygen_concentrator>, [[<ore:compressedDesh>, <galacticraftcore:air_vent>, <ore:compressedDesh>],[<ore:compressedDesh>, <galacticraftcore:air_fan>, <ore:compressedDesh>], [<galacticraftcore:canister>, <gregtech:meta_item_1:144>, <galacticraftcore:canister>]]);
+recipes.addShaped(<galacticraftcore:oxygen_concentrator>, [[<ore:compressedSteel>, <galacticraftcore:air_vent>, <ore:compressedSteel>],[<ore:compressedSteel>, <galacticraftcore:air_fan>, <ore:compressedSteel>], [<galacticraftcore:canister>, <gregtech:meta_item_1:144>, <galacticraftcore:canister>]]);
 
 //air fan
 recipes.remove(<galacticraftcore:air_fan>);

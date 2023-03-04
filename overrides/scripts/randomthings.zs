@@ -70,9 +70,29 @@ assembler.recipeBuilder()
     .EUt(512)
     .buildAndRegister();
 
+//Spectre Shovel
 recipes.addShaped(<randomthings:spectreshovel>, [[<randomthings:ingredient:3>],[<tconstruct:tool_rod>], [<tconstruct:tool_rod>]]);
+
+//Spectre Pick
 recipes.addShaped(<randomthings:spectrepickaxe>, [[<randomthings:ingredient:3>, <randomthings:ingredient:3>, <randomthings:ingredient:3>],[null, <tconstruct:tool_rod>, null], [null, <tconstruct:tool_rod>, null]]);
+
+//Spectre Axe
 recipes.addShapedMirrored(<randomthings:spectreaxe>, [[<randomthings:ingredient:3>, <randomthings:ingredient:3>, null],[<randomthings:ingredient:3>, <tconstruct:tool_rod>, null], [null, <tconstruct:tool_rod>, null]]);
+
+//Spectre Sword
 recipes.addShaped(<randomthings:spectresword>, [[<randomthings:ingredient:3>],[<randomthings:ingredient:3>], [<tconstruct:tool_rod>]]);
+
+//Item Collector Adv
 recipes.addShaped(<randomthings:advanceditemcollector>, [[<ore:toolHammer>, <ore:gemExquisiteAmber>, <ore:toolWrench>],[<gregtech:meta_lens:2508>, <randomthings:itemcollector>, <gregtech:meta_lens:2508>], [<ore:obsidian>, <ore:obsidian>, <ore:obsidian>]]);
+
+//Item Collector
 recipes.addShaped(<randomthings:itemcollector>, [[null, <ore:gemExquisiteDiamond>, null],[<gregtech:meta_item_1:187>, <tconstruct:tool_rod>, <minecraft:hopper>], [null, <ore:plateRedAlloy>, null]]);
+
+//Spectre
+alloy_smelter.recipeBuilder()
+    .inputs(<twilightforest:charm_of_keeping_3>)
+    .inputs(<randomthings:ingredient:3>)
+    .outputs(<randomthings:spectreanchor>)
+    .duration(200)
+    .EUt(64)
+    .buildAndRegister();

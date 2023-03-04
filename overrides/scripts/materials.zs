@@ -38,7 +38,7 @@ MaterialBuilder(32009, "amber")
 MaterialBuilder(32025, "redstone_alloy")
     .ingot().fluid()
     .color(0x943423).iconSet("SHINY")
-    .flags(["generate_plate", "generate_bolt_screw","generate_rod","generate_frame"])
+    .flags(["generate_plate", "generate_bolt_screw","generate_rod","generate_frame","generate_gear"])
     .components([
     <material:redstone>* 1,
     <material:hydrogen> * 1,
@@ -51,7 +51,7 @@ MaterialBuilder(32025, "redstone_alloy")
 MaterialBuilder(32010, "pulsating_iron")
     .ingot().fluid()
     .color(0x4b915b).iconSet("SHINY")
-    .flags(["generate_plate", "generate_bolt_screw","generate_rod"])
+    .flags(["generate_plate", "generate_bolt_screw","generate_rod","generate_gear"])
     .components([
     <material:ender_pearl> * 1,
     <material:iron> * 1,
@@ -63,7 +63,7 @@ MaterialBuilder(32010, "pulsating_iron")
 MaterialBuilder(32014, "conductive_iron")
     .ingot().fluid()
     .color(0xb89791).iconSet("SHINY")
-    .flags(["generate_plate", "generate_bolt_screw","generate_rod"])
+    .flags(["generate_plate", "generate_bolt_screw","generate_rod","generate_gear"])
     .components([
     <material:silver> * 1,
     <material:iron> * 1,
@@ -74,7 +74,7 @@ MaterialBuilder(32014, "conductive_iron")
 MaterialBuilder(32012, "energetic_alloy")
     .ingot().fluid()
     .color(0xd89045).iconSet("SHINY")
-    .flags(["generate_plate", "generate_bolt_screw","generate_rod"])
+    .flags(["generate_plate", "generate_bolt_screw","generate_rod","generate_gear"])
     .components([
     <material:black_steel>* 1,
     <material:gold>* 1,
@@ -87,7 +87,7 @@ MaterialBuilder(32012, "energetic_alloy")
 MaterialBuilder(32011, "vibrant_alloy")
     .ingot().fluid()
     .color(0x859f2d).iconSet("SHINY")
-    .flags(["generate_plate", "generate_bolt_screw","generate_rod"])
+    .flags(["generate_plate", "generate_bolt_screw","generate_rod","generate_gear"])
     .components([
     <material:ender_eye>* 1,
     <material:energetic_alloy>* 1,
@@ -100,7 +100,7 @@ MaterialBuilder(32011, "vibrant_alloy")
 MaterialBuilder(32013, "soularium")
     .ingot().fluid()
     .color(0x372719).iconSet("INGOT")
-    .flags(["generate_plate", "generate_bolt_screw","generate_rod"])
+    .flags(["generate_plate", "generate_bolt_screw","generate_rod","generate_gear"])
     .blastTemp(1000,"HIGHEST",120,1027)
     .components([<material:gold> * 1,<material:ash> * 1])
     .build();
@@ -121,7 +121,7 @@ MaterialBuilder(32017, "electrical_steel")
 MaterialBuilder(32015, "dark_steel")
     .ingot().fluid()
     .color(0x2f292f).iconSet("INGOT")
-    .flags(["generate_plate", "generate_bolt_screw","generate_rod","generate_frame"])
+    .flags(["generate_plate", "generate_bolt_screw","generate_rod","generate_long_rod","generate_ring","generate_frame","generate_gear", "generate_fine_wire"])
     .components([
     <material:electrical_steel>* 1,
     <material:coal>* 1,
@@ -133,7 +133,7 @@ MaterialBuilder(32015, "dark_steel")
 MaterialBuilder(32016, "end_steel")
     .ingot().fluid()
     .color(0xbdb88c).iconSet("INGOT")
-    .flags(["generate_plate", "generate_bolt_screw","generate_rod","generate_frame"])
+    .flags(["generate_plate", "generate_bolt_screw","generate_rod","generate_frame","generate_gear"])
     .components([
     <material:dark_steel>* 1,
     <material:endstone>* 1,

@@ -723,7 +723,7 @@ mods.bloodmagic.AlchemyTable.addRecipe(<bloodmagic:component:8>,
 // Suppression Reagent
 mods.bloodmagic.TartaricForge.removeRecipe([<bloodmagic:teleposer>, <minecraft:water_bucket>, <minecraft:blaze_rod>, <minecraft:lava_bucket>]);
 mods.bloodmagic.AlchemyTable.addRecipe(<bloodmagic:component:9>,
-	[<ore:dustVoid>, <appliedenergistics2:material:45>, <bloodmagic:component:29>,
+	[<ore:dustVoid>, <ore:itemPulsatingPowder>, <bloodmagic:component:29>,
 	<ore:dustObsidian>, <ore:dustCarbon>], 
 	1000,200,2);
 
