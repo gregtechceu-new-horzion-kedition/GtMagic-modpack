@@ -144,10 +144,15 @@ Casting.removeTableRecipe(<tconstruct:cast_custom:3>);
 Casting.removeTableRecipe(<tconstruct:cast_custom:4>);
 Casting.removeTableRecipe(<ore:ingotAluminum>.firstItem);
 Casting.removeTableRecipe(<ore:nuggetAluminum>.firstItem);
+Casting.removeTableRecipe(<enderio:item_alloy_ball:*>);
+Casting.removeTableRecipe(<enderio:item_alloy_endergy_ball:*>);
 
 //remove alloying revipe
 Alloy.removeRecipe(<liquid:pigiron>);
 Alloy.addRecipe(<liquid:pigiron> * 144, [<liquid:emerald> * 640, <liquid:iron> * 144, <liquid:blood> * 80]);
+
+Alloy.removeRecipe(<liquid:energetic_silver>);
+Alloy.removeRecipe(<liquid:vivid_alloy>);
 
 Alloy.removeRecipe(<liquid:manyullyn>);
 mixer.recipeBuilder()

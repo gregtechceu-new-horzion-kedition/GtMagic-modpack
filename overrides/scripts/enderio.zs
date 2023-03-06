@@ -1195,3 +1195,238 @@ recipes.addShaped(<enderio:item_dark_steel_hand>,
 	[[<ore:screwDarkSteel>, <ore:screwDarkSteel>, <ore:stickWood>],
 	[<ore:screwDarkSteel>, <ore:screwDarkSteel>, <ore:stickWood>],
 	[null, null, <ore:stickWood>]]);
+
+//rocket fuel
+mods.enderio.Vat.removeRecipe(<liquid:rocket_fuel>);
+
+###enderio conduit mod
+
+
+//1x Capacitor
+assembler.recipeBuilder()
+	.inputs([<ore:boltIron> * 2, <ore:dustBedrock>])
+    .fluidInputs(<liquid:plastic> * 144)
+	.outputs(<enderio:item_capacitor_grainy>)
+	.duration(100).EUt(30).buildAndRegister();
+
+//1x Capacitor
+assembler.recipeBuilder()
+	.inputs([<ore:boltSilver> * 4, <ore:foilSilver> * 4])
+    .fluidInputs(<liquid:plastic> * 288)
+	.outputs(<enderio:item_capacitor_silver>)
+	.duration(200).EUt(30).buildAndRegister();
+
+//2x Capacitor
+assembler.recipeBuilder()
+	.inputs([<enderio:item_capacitor_silver> * 2, <ore:dustCoal>])
+    .fluidInputs(<liquid:energetic_silver> * 864)
+	.outputs(<enderio:item_capacitor_energetic_silver>)
+	.duration(150).EUt(120).buildAndRegister();
+
+//4x Capacitor
+assembler.recipeBuilder()
+	.inputs([<enderio:item_capacitor_energetic_silver> * 2, <ore:dustGlowstone> * 4])
+    .fluidInputs(<liquid:vivid_alloy> * 864)
+	.outputs(<enderio:item_capacitor_vivid>)
+	.duration(200).EUt(480).buildAndRegister();
+
+//8x Capacitor
+assembler.recipeBuilder()
+	.inputs([<enderio:item_capacitor_vivid> * 2, <ore:gemEnderEye>])
+    .fluidInputs(<liquid:crystalline_alloy> * 864)
+	.outputs(<enderio:item_capacitor_crystalline>)
+	.duration(200).EUt(1920).buildAndRegister();
+	
+//8x Capacitor
+assembler.recipeBuilder()
+	.inputs([<enderio:item_basic_capacitor:2> * 2, <ore:gemEnderEye>])
+    .fluidInputs(<liquid:crystalline_alloy> * 864)
+	.outputs(<enderio:item_capacitor_crystalline>)
+	.duration(200).EUt(1920).buildAndRegister();
+
+//16x Capacitor
+assembler.recipeBuilder()
+	.inputs([<enderio:item_capacitor_crystalline> * 2, <ore:netherStar>, <ore:plateEndSteel>])
+    .fluidInputs(<liquid:melodic_alloy> * 864)
+	.outputs(<enderio:item_capacitor_melodic>)
+	.duration(200).EUt(7680).buildAndRegister();
+
+//32x Capacitor
+assembler.recipeBuilder()
+	.inputs([<enderio:item_capacitor_melodic> * 2, <gregtech:meta_item_1:283>, <ore:itemPrecientCrystal>])
+    .fluidInputs(<liquid:stellar_alloy> * 864)
+	.outputs(<enderio:item_capacitor_stellar>)
+	.duration(200).EUt(30720).buildAndRegister();
+
+//Endergy Conduit
+assembler.recipeBuilder()
+    .inputs([<ore:wireGtSingleRedAlloy>, <ore:plateCrudeSteel>])
+    .fluidInputs(<liquid:tin> * 144)
+	.outputs(<enderio:item_endergy_conduit>)
+	.duration(100).EUt(7).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<ore:wireGtSingleIron>, <ore:plateIron>])
+    .fluidInputs(<liquid:tin> * 144)
+	.outputs(<enderio:item_endergy_conduit:1>)
+	.duration(100).EUt(16).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<ore:wireGtSingleTin>, <ore:plateAluminium>])
+    .fluidInputs(<liquid:soldering_alloy> * 144)
+	.outputs(<enderio:item_endergy_conduit:2>)
+	.duration(100).EUt(30).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<ore:wireGtSingleNickel>, <ore:plateGold>])
+    .fluidInputs(<liquid:soldering_alloy> * 144)
+	.outputs(<enderio:item_endergy_conduit:3>)
+	.duration(100).EUt(64).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<ore:wireGtSingleAnnealedCopper>, <ore:plateCopper>])
+    .fluidInputs(<liquid:soldering_alloy> * 144)
+	.outputs(<enderio:item_endergy_conduit:4>)
+	.duration(100).EUt(96).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<ore:wireGtSingleElectrum>, <ore:plateSilver>])
+    .fluidInputs(<liquid:plastic> * 144)
+	.outputs(<enderio:item_endergy_conduit:5>)
+	.duration(100).EUt(160).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<ore:wireGtSingleBlackSteel>, <ore:plateElectrum>])
+    .fluidInputs(<liquid:plastic> * 144)
+	.outputs(<enderio:item_endergy_conduit:6>)
+	.duration(100).EUt(192).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<ore:wireGtSingleTungstenSteel>, <ore:plateEnergeticSilver>])
+    .fluidInputs(<liquid:epoxy> * 144)
+	.outputs(<enderio:item_endergy_conduit:7>)
+	.duration(100).EUt(320).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<ore:wireGtSingleHssg>, <ore:plateCrystallineAlloy>])
+    .fluidInputs(<liquid:epoxy> * 144)
+	.outputs(<enderio:item_endergy_conduit:8>)
+	.duration(100).EUt(960).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<ore:wireGtSingleNiobiumTitanium>, <ore:plateCrystallinePinkSlime>])
+    .fluidInputs(<liquid:polytetrafluoroethylene> * 144)
+	.outputs(<enderio:item_endergy_conduit:9>)
+	.duration(100).EUt(1920).buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs([<ore:wireGtSingleNaquadahAlloy>, <ore:plateMelodicAlloy>])
+    .fluidInputs(<liquid:polytetrafluoroethylene> * 144)
+	.outputs(<enderio:item_endergy_conduit:10>)
+	.duration(100).EUt(7680).buildAndRegister();
+
+mixer.recipeBuilder()
+    .inputs(<ore:itemPulsatingPowder>)
+    .inputs(<ore:dustGold>)
+	.inputs(<ore:dustEmerald>)
+	.circuit(2)
+    .outputs(<ore:dustCrystallineAlloy>.firstItem * 3)
+    .EUt(8)
+    .duration(100)
+    .buildAndRegister();
+
+mixer.recipeBuilder()
+    .inputs(<ore:dustEndSteel>)
+    .inputs(<ore:dustEnderEye>)
+	.inputs(<ore:dustBismuth>)
+	.circuit(2)
+    .outputs(<ore:dustMelodicAlloy>.firstItem * 3)
+    .EUt(7)
+    .duration(100)
+    .buildAndRegister();
+
+mixer.recipeBuilder()
+    .inputs(<ore:dustMelodicAlloy>)
+    .inputs(<ore:dustNetherStar>)
+	.inputs(<ore:dustNaquadah>)
+	.circuit(2)
+    .outputs(<ore:dustStellarAlloy>.firstItem * 3)
+    .EUt(7)
+    .duration(100)
+    .buildAndRegister();
+
+mixer.recipeBuilder()
+    .inputs(<tconstruct:slime_congealed:2>)
+    .inputs(<ore:dustCrystallineAlloy>)
+	.inputs(<ore:dustDiamond>)
+	.circuit(2)
+    .outputs(<ore:dustCrystallinePinkSlime>.firstItem * 3)
+    .EUt(7)
+    .duration(100)
+    .buildAndRegister();
+
+mixer.recipeBuilder()
+    .inputs(<ore:dustChromite>)
+    .inputs(<ore:dustEnderEye>)
+	.inputs(<ore:dustEnergeticSilver>)
+	.circuit(2)
+    .outputs(<ore:dustVividAlloy>.firstItem * 3)
+    .EUt(7)
+    .duration(100)
+    .buildAndRegister();
+
+recipes.addShaped(<enderio:item_stellar_alloy_helmet>, 
+	[[<ore:plateStellarAlloy>, <ore:plateStellarAlloy>, <ore:plateStellarAlloy>],
+	[<ore:plateStellarAlloy>, <ore:skullEnderResonator>, <ore:plateStellarAlloy>],
+    [null, <ore:gtceHardHammers>, null]
+	]);
+	
+recipes.addShaped(<enderio:item_stellar_alloy_chestplate>, 
+	[[<ore:plateStellarAlloy>, <ore:gtceHardHammers>, <ore:plateStellarAlloy>],
+	[<ore:plateStellarAlloy>, <ore:skullEnderResonator>, <ore:plateStellarAlloy>],
+	[<ore:plateStellarAlloy>, <ore:plateStellarAlloy>, <ore:plateStellarAlloy>]]);
+
+recipes.addShaped(<enderio:item_stellar_alloy_leggings>, 
+	[[<ore:plateStellarAlloy>, <ore:plateStellarAlloy>, <ore:plateStellarAlloy>],
+	[<ore:plateStellarAlloy>, <ore:skullEnderResonator>, <ore:plateStellarAlloy>],
+	[<ore:plateStellarAlloy>, <ore:gtceHardHammers>, <ore:plateStellarAlloy>]]);
+
+recipes.addShaped(<enderio:item_stellar_alloy_boots>, 
+	[[<ore:plateStellarAlloy>, <ore:skullEnderResonator>, <ore:plateStellarAlloy>],
+	[<ore:plateStellarAlloy>, <ore:gtceHardHammers>, <ore:plateStellarAlloy>],
+	]);
+
+recipes.addShaped(<enderio:item_stellar_alloy_axe>, 
+	[[<ore:plateStellarAlloy>, <ore:ingotStellarAlloy>, <ore:gtceHardHammers>],
+	[<ore:plateStellarAlloy>, <ore:stickStellarAlloy>],
+	[<ore:gtceFiles>, <ore:stickStellarAlloy>]]);
+
+recipes.addShaped(<enderio:item_stellar_alloy_sword>, 
+	[[null, <ore:plateStellarAlloy>, null],
+	[<ore:gtceFiles>, <ore:plateStellarAlloy>, <ore:gtceHardHammers>],
+	[null, <ore:stickStellarAlloy>, null]]);
+
+recipes.addShaped(<enderio:item_stellar_alloy_pickaxe>, 
+	[[<ore:plateStellarAlloy>, <ore:ingotStellarAlloy>, <ore:ingotStellarAlloy>],
+	[<ore:gtceFiles>, <ore:stickStellarAlloy>, <ore:gtceHardHammers>],
+	[null, <ore:stickStellarAlloy>, null]]);
+
+recipes.addShapeless(<ore:dustCrudeSteel>.firstItem * 3, [<ore:dustClay>* 1,<ore:dustFlint>* 1,<ore:dustStone>* 1]);
+
+mixer.recipeBuilder()
+    .inputs([<ore:dustClay>* 1,<ore:dustFlint>* 1,<ore:dustStone>* 1])
+	.circuit(2)
+    .outputs(<ore:dustCrudeSteel>.firstItem * 3)
+    .EUt(7)
+    .duration(100)
+    .buildAndRegister();
+
+recipes.addShapeless(<ore:dustEnergeticSilver>.firstItem * 3, [<ore:dustBlackSteel>* 1,<ore:dustSilver> * 1,<ore:dustConductiveIron>* 1]);
+
+mixer.recipeBuilder()
+    .inputs([<ore:dustBlackSteel>* 1,<ore:dustSilver> * 1,<ore:dustConductiveIron>* 1])
+	.circuit(2)
+    .outputs(<ore:dustEnergeticSilver>.firstItem * 3)
+    .EUt(7)
+    .duration(100)
+    .buildAndRegister();
