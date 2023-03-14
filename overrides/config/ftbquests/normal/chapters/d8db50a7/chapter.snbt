@@ -1,0 +1,55 @@
+{
+	title: "9-极高压 UHV",
+	icon: {
+		id: "tconstruct:frypan",
+		tag: {
+			TinkerData: {
+				Materials: [
+					"infinity_metal",
+					"infinity_metal"
+				],
+				Modifiers: []
+			},
+			Stats: {
+				Durability: 1332,
+				HarvestLevel: 93,
+				Attack: 9001.0f,
+				MiningSpeed: 66.6f,
+				AttackSpeedMultiplier: 1.0f,
+				FreeModifiers: 3
+			},
+			StatsOriginal: {
+				Durability: 1332,
+				HarvestLevel: 93,
+				Attack: 9001.0f,
+				MiningSpeed: 66.6f,
+				AttackSpeedMultiplier: 1.0f,
+				FreeModifiers: 3
+			},
+			Special: {
+				Categories: [
+					"tool",
+					"weapon"
+				]
+			},
+			Modifiers: [{
+				identifier: "tconevo.infinitum",
+				color: -11757164,
+				level: 1
+			},
+			{
+				identifier: "tconevo.omnipotence",
+				color: -11757164,
+				level: 1
+			}],
+			Traits: [
+				"tconevo.infinitum",
+				"tconevo.omnipotence"
+			],
+			Unbreakable: 1b
+		}
+	},
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

@@ -1,0 +1,12 @@
+{
+	x: 2.0d,
+	y: -16.0d,
+	size: 2.0d,
+	tasks: [{
+		uid: "ebce95db",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 275"
+		}]
+	}]
+}

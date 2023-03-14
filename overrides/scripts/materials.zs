@@ -16,12 +16,12 @@ MaterialBuilder(32000, "fluix")
 MaterialBuilder(32007, "thaumium")
     .ingot().fluid()
     .color(0x473B6D).iconSet("SHINY")
-    .flags(["generate_plate", "generate_bolt_screw","generate_rod", "generate_ring"])
+    .flags(["generate_plate", "generate_bolt_screw","generate_rod", "generate_ring","generate_gear","generate_frame"])
     .build();
 MaterialBuilder(32008, "void")
     .ingot().fluid()
     .color(0x2A1248).iconSet("SHINY")
-    .flags(["generate_plate", "generate_bolt_screw","generate_rod", "generate_ring"])
+    .flags(["generate_plate", "generate_bolt_screw","generate_rod", "generate_ring","generate_gear","generate_rotor"])
     .build();
 MaterialBuilder(32009, "amber")
     .gem()
@@ -184,13 +184,13 @@ MaterialBuilder(32022, "ardite")
 MaterialBuilder(32023, "ichorium")
     .ingot().fluid()
     .color(0xCC7406).iconSet("SHINY")
-    .flags(["generate_plate", "generate_bolt_screw","generate_rod", "generate_ring"])
+    .flags(["generate_plate", "generate_bolt_screw","generate_rod", "generate_ring","generate_frame","generate_small_gear"])
     .build();
 
 MaterialBuilder(32024, "manyullyn")
     .ingot().fluid()
     .color(0x7131AC).iconSet("SHINY")
-    .flags(["generate_plate", "generate_bolt_screw","generate_rod", "generate_ring"])
+    .flags(["generate_plate", "generate_bolt_screw","generate_rod", "generate_ring", "generate_spring"])
     .blastTemp(3300,"MID",480,1500)
     .build();
 
@@ -270,7 +270,7 @@ MaterialBuilder(32031, "energetic_silver")
 MaterialBuilder(32032, "vivid_alloy")
     .ingot().fluid()
     .color(0x469BB1).iconSet("SHINY")
-    .flags(["generate_plate", "generate_bolt_screw","generate_rod"])
+    .flags(["generate_plate", "generate_bolt_screw","generate_rod","generate_rotor"])
     .components([
     <material:chromite>* 1,
     <material:energetic_silver>* 1,
@@ -302,6 +302,7 @@ MaterialBuilder(32032, "vivid_alloy")
 <material:ender_pearl>.addFluid();
 <material:ultimet>.addDust();
 <material:seaborgium>.addFlags("generate_rotor");
+<material:europium>.addFlags("generate_ring");
 <material:tantalum>.addFlags("generate_bolt_screw");
 
 MaterialBuilder(32001, "infused_air")

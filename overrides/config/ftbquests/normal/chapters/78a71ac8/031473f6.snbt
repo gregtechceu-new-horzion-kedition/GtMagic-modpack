@@ -1,0 +1,23 @@
+{
+	x: -6.0d,
+	y: -18.5d,
+	dependencies: [
+		"a2be0bbf"
+	],
+	optional: true,
+	tasks: [{
+		uid: "18833028",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 349"
+		}],
+		count: 2L
+	},
+	{
+		uid: "e531999c",
+		type: "item",
+		items: [{
+			item: "minecraft:brick"
+		}]
+	}]
+}

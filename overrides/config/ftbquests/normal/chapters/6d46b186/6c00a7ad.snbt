@@ -1,0 +1,13 @@
+{
+	icon: "openblocks:serious_glasses",
+	x: -9.0d,
+	y: -1.0d,
+	dependencies: [
+		"820fc8d4"
+	],
+	tasks: [{
+		uid: "a8730ea8",
+		type: "checkmark",
+		title: "当你只有一柄锤子"
+	}]
+}

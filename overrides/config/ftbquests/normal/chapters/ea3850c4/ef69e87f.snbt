@@ -1,0 +1,17 @@
+{
+	title: "手搓燧石",
+	icon: "minecraft:flint",
+	x: -1.5d,
+	y: -5.0d,
+	dependencies: [
+		"4fe19ccb"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "f3f7f083",
+		type: "item",
+		items: [{
+			item: "minecraft:flint"
+		}]
+	}]
+}

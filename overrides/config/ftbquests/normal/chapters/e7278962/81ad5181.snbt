@@ -1,0 +1,21 @@
+{
+	x: 7.0d,
+	y: -7.5d,
+	dependencies: [
+		"ddfb30c5"
+	],
+	tasks: [{
+		uid: "6c4b2c40",
+		type: "item",
+		items: [{
+			item: "minecraft:iron_block"
+		}]
+	},
+	{
+		uid: "7d4aae9b",
+		type: "item",
+		items: [{
+			item: "minecraft:pumpkin"
+		}]
+	}]
+}

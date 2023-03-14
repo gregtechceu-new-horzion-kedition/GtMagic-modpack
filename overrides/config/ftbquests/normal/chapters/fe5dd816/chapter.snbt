@@ -1,0 +1,7 @@
+{
+	title: "匠魂冶炼炉",
+	icon: "tconstruct:seared_tank",
+	always_invisible: false,
+	group: 1833349510,
+	default_quest_shape: "octagon"
+}

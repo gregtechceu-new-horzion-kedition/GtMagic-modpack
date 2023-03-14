@@ -1,0 +1,14 @@
+{
+	x: 8.0d,
+	y: 2.5d,
+	dependencies: [
+		"924d5f3a"
+	],
+	tasks: [{
+		uid: "3f2f5daf",
+		type: "item",
+		items: [{
+			item: "gregtech:metal_casing 1 8"
+		}]
+	}]
+}

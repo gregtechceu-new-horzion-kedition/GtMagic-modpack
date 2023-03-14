@@ -1,0 +1,14 @@
+{
+	title: "理清主线任务和支线任务",
+	icon: "ftbquests:book",
+	x: -0.5d,
+	y: -7.0d,
+	dependencies: [
+		"3d211979"
+	],
+	tasks: [{
+		uid: "054a308f",
+		type: "checkmark",
+		title: "明白"
+	}]
+}

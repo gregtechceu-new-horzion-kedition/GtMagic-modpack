@@ -1,0 +1,38 @@
+{
+	title: "木棍与石头",
+	icon: "minecraft:gravel",
+	x: -4.0d,
+	y: -5.0d,
+	dependencies: [
+		"be5ba488"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "56e19b02",
+		type: "item",
+		items: [{
+			item: "minecraft:gravel"
+		}],
+		count: 9L,
+		consume_items: false
+	},
+	{
+		uid: "8ed4aea5",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any logWood"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "logWood"
+				}
+			}
+		}],
+		count: 5L
+	}]
+}

@@ -1,0 +1,41 @@
+{
+	title: "你听到胡萝卜成熟的声音了吗？",
+	icon: "minecraft:dye 1 15",
+	x: 10.0d,
+	y: -5.0d,
+	dependencies: [
+		"1289c0ec"
+	],
+	tasks: [{
+		uid: "76ddee05",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any logWood"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "logWood"
+				}
+			}
+		}],
+		count: 10L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "7ead3961",
+		type: "item",
+		item: "minecraft:dye 1 15",
+		count: 10
+	},
+	{
+		uid: "190c5c2d",
+		type: "choice",
+		team_reward: false,
+		table: 0
+	}]
+}

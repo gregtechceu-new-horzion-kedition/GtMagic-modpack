@@ -1,0 +1,21 @@
+{
+	x: -3.0d,
+	y: -18.0d,
+	dependencies: [
+		"0a17c74d",
+		"031473f6",
+		"935bea09",
+		"9c1be290",
+		"1bb5226b",
+		"ec2777c9"
+	],
+	dependency_requirement: "one_started",
+	size: 2.0d,
+	tasks: [{
+		uid: "2ebaf513",
+		type: "item",
+		items: [{
+			item: "gregtech:metal_casing 1 1"
+		}]
+	}]
+}

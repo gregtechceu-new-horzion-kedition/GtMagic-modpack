@@ -1,0 +1,32 @@
+{
+	x: -10.0d,
+	y: -18.5d,
+	dependencies: [
+		"a2be0bbf"
+	],
+	optional: true,
+	tasks: [{
+		uid: "0bdf01c3",
+		type: "item",
+		items: [{
+			item: "minecraft:clay_ball"
+		}],
+		count: 1008L
+	},
+	{
+		uid: "b83398df",
+		type: "item",
+		items: [{
+			item: "minecraft:cobblestone"
+		}],
+		count: 24L
+	},
+	{
+		uid: "1c9b82dc",
+		type: "item",
+		items: [{
+			item: "minecraft:flint"
+		}],
+		count: 12L
+	}]
+}

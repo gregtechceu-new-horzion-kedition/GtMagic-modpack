@@ -1,0 +1,15 @@
+{
+	title: "该去哪找矿石？",
+	x: -4.5d,
+	y: 11.0d,
+	dependencies: [
+		"f63b53fb"
+	],
+	tasks: [{
+		uid: "dbad0590",
+		type: "item",
+		items: [{
+			item: "minecraft:iron_ore"
+		}]
+	}]
+}

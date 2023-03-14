@@ -1,0 +1,9 @@
+{
+	x: -19.5d,
+	y: -5.0d,
+	tasks: [{
+		uid: "ca6dae39",
+		type: "checkmark",
+		title: "她转了一圈又一圈"
+	}]
+}

@@ -382,23 +382,23 @@ mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:slate:4>, <bloodmagic:slate:3>,
 
 // Elemental Incription Tool - Water
 mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:lapis_block>);
-mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:inscription_tool:1>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}), 2, 5000, 20,20);
+mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:inscription_tool:1>, <ore:oreCrystalWater>.firstItem, 2, 5000, 20,20);
 
 // Elemental Incription Tool - Fire
 mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:magma_cream>);
-mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:inscription_tool:2>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}), 2, 5000, 20,20);
+mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:inscription_tool:2>, <ore:oreCrystalFire>.firstItem, 2, 5000, 20,20);
 
 // Elemental Incription Tool - Earth
 mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:obsidian>);
-mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:inscription_tool:3>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]}), 2, 5000, 20,20);
+mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:inscription_tool:3>, <ore:oreCrystalEarth>.firstItem, 2, 5000, 20,20);
 
 // Elemental Incription Tool - Air
 mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:ghast_tear>);
-mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:inscription_tool:4>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]}), 2, 5000, 20,20);
+mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:inscription_tool:4>, <ore:oreCrystalAir>.firstItem, 2, 5000, 20,20);
 
 // Elemental Incription Tool - Dusk
 mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:coal_block>);
-mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:inscription_tool:5>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}), 3, 100000, 20,20);
+mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:inscription_tool:5>, <ore:oreCrystalEntropy>.firstItem, 3, 100000, 20,20);
 
 // Sacrificial Dagger
 recipes.remove(<bloodmagic:sacrificial_dagger>);

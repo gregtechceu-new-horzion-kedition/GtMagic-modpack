@@ -1,0 +1,22 @@
+{
+	title: "你的“第一个夜晚”",
+	icon: "minecraft:wheat",
+	x: -7.5d,
+	y: -5.0d,
+	shape: "circle",
+	text: [
+		"--你初来乍到，务必要解决饮食问题，夜里更需要有一个能睡好觉的地方。",
+		"--民以食为天",
+		"--尽快寻找食物吧"
+	],
+	size: 3.0d,
+	tasks: [{
+		uid: "a9d355fa",
+		type: "item",
+		items: [{
+			item: "minecraft:dirt"
+		}],
+		count: 8L,
+		consume_items: false
+	}]
+}

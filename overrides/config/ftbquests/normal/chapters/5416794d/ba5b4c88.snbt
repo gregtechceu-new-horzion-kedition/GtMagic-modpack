@@ -1,0 +1,14 @@
+{
+	x: -6.5d,
+	y: -4.5d,
+	text: [
+		"很快，夜色降临。你的身边充斥着精英怪——看看屏幕上方的血条。"
+	],
+	tasks: [{
+		uid: "4d88a17f",
+		type: "stat",
+		title: "这里的怪物与原版截然不同。",
+		stat: "stat.mobKills",
+		value: 1
+	}]
+}

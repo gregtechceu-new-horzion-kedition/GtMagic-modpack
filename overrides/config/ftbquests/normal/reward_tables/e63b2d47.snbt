@@ -1,0 +1,28 @@
+{
+	title: "你听到胡萝卜成熟的声音了么？",
+	loot_size: 1,
+	use_title: true,
+	rewards: [{
+		title: "石斧 1个",
+		item: "minecraft:stone_axe"
+	},
+	{
+		title: "火把 5个",
+		item: "minecraft:torch",
+		count: 5
+	},
+	{
+		title: "骨粉 3个",
+		item: "minecraft:dye 1 15",
+		count: 3
+	}],
+	loot_crate: {
+		string_id: "_",
+		color: 16777215,
+		drops: {
+			passive: 0,
+			monster: 0,
+			boss: 0
+		}
+	}
+}

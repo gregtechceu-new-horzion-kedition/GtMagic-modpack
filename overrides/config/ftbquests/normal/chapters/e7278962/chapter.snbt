@@ -1,0 +1,7 @@
+{
+	title: "0.5-蒸汽时代",
+	icon: "randomthings:blazeandsteel",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: "octagon"
+}

@@ -1,0 +1,16 @@
+{
+	x: -15.0d,
+	y: -6.5d,
+	dependencies: [
+		"d25a9cf6"
+	],
+	tasks: [{
+		uid: "d4bc02e3",
+		type: "item",
+		items: [{
+			item: "spiceoflife:lunchbox"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

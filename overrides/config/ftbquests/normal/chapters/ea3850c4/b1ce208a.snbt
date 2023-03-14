@@ -1,0 +1,42 @@
+{
+	icon: "thaumcraft:sapling_silverwood",
+	x: -3.0d,
+	y: 1.0d,
+	dependencies: [
+		"a6867019"
+	],
+	size: 3.0d,
+	tasks: [{
+		uid: "875aed1e",
+		type: "item",
+		items: [{
+			item: "thaumcraft:sapling_silverwood"
+		}]
+	},
+	{
+		uid: "7c150742",
+		type: "item",
+		items: [{
+			item: "thaumcraft:log_silverwood"
+		}],
+		count: 5L
+	},
+	{
+		uid: "619bfee8",
+		type: "item",
+		items: [{
+			item: "thaumcraft:sapling_greatwood"
+		}]
+	},
+	{
+		uid: "735cde11",
+		type: "item",
+		tags: [
+			"1"
+		],
+		items: [{
+			item: "thaumcraft:log_greatwood"
+		}],
+		count: 5L
+	}]
+}

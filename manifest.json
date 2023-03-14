@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "GtMagic",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "author": "",
   "files": [
     {
@@ -357,11 +357,6 @@
     {
       "projectID": 225561,
       "fileID": 2678374,
-      "required": true
-    },
-    {
-      "projectID": 228823,
-      "fileID": 2904183,
       "required": true
     },
     {
@@ -822,6 +817,11 @@
     {
       "projectID": 278385,
       "fileID": 2482543,
+      "required": true
+    },
+    {
+      "projectID": 290881,
+      "fileID": 2545640,
       "required": true
     },
     {

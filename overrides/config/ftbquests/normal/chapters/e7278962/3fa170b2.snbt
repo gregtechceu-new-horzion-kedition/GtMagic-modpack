@@ -1,0 +1,15 @@
+{
+	x: 1.0d,
+	y: -6.0d,
+	dependencies: [
+		"ddfb30c5"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "16417bde",
+		type: "item",
+		items: [{
+			item: "minecraft:anvil"
+		}]
+	}]
+}

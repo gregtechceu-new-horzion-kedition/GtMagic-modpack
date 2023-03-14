@@ -1,0 +1,23 @@
+{
+	title: "给羊理理发",
+	icon: {
+		id: "openblocks:trophy",
+		tag: {
+			entity_id: "minecraft:sheep"
+		}
+	},
+	x: -19.5d,
+	y: -3.0d,
+	dependencies: [
+		"d25a9cf6"
+	],
+	tasks: [{
+		uid: "920adb44",
+		type: "item",
+		items: [{
+			item: "minecraft:shears"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

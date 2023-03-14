@@ -1,0 +1,16 @@
+{
+	x: 1.0d,
+	y: -3.0d,
+	dependencies: [
+		"8a8b8273"
+	],
+	tasks: [{
+		uid: "1d32540b",
+		type: "item",
+		items: [{
+			item: "mujmajnkraftsbettersurvival:itemsmallshield"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

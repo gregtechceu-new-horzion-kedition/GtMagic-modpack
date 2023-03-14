@@ -1,0 +1,31 @@
+{
+	x: 1.0d,
+	y: -11.0d,
+	dependencies: [
+		"804d4107"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "62a3baf7",
+		type: "item",
+		items: [{
+			id: "gregtech:wire_cutter",
+			tag: {
+				DisallowContainerItem: 0b,
+				GT.Tool: {
+					Material: "iron",
+					MaxDurability: 256,
+					Durability: 0,
+					ToolSpeed: 6.0f,
+					HarvestLevel: 2,
+					AttackDamage: 1.0f,
+					AttackSpeed: -2.4f
+				},
+				HideFlags: 2,
+				GT.Behaviours: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

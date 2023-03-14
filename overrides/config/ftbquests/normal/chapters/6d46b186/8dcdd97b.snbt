@@ -1,0 +1,29 @@
+{
+	title: "园丁",
+	icon: "minecraft:wheat_seeds",
+	x: -19.5d,
+	y: -1.5d,
+	dependencies: [
+		"d25a9cf6"
+	],
+	tasks: [{
+		uid: "88b7e048",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any toolHoe"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "toolHoe"
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

@@ -1,0 +1,24 @@
+{
+	title: "一分耕耘——",
+	icon: "minecraft:wheat_seeds",
+	x: 8.0d,
+	y: -5.0d,
+	dependencies: [
+		"fb3c8cb0"
+	],
+	tasks: [{
+		uid: "13cc7be9",
+		type: "item",
+		items: [{
+			item: "minecraft:stick"
+		}],
+		count: 8L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "472cb0d1",
+		type: "item",
+		item: "minecraft:carrot",
+		count: 5
+	}]
+}

@@ -1,0 +1,14 @@
+{
+	x: -9.0d,
+	y: -5.0d,
+	dependencies: [
+		"d25a9cf6"
+	],
+	tasks: [{
+		uid: "539ef3b2",
+		type: "item",
+		items: [{
+			item: "backpack:tanned_leather"
+		}]
+	}]
+}

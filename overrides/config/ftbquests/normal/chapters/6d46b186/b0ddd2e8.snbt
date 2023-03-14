@@ -1,0 +1,12 @@
+{
+	x: -8.5d,
+	y: 1.0d,
+	dependencies: [
+		"d19f6173"
+	],
+	tasks: [{
+		uid: "c97ffa11",
+		type: "checkmark",
+		title: "铜制标枪"
+	}]
+}

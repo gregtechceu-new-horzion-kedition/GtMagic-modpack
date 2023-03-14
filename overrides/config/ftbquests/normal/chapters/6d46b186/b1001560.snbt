@@ -1,0 +1,9 @@
+{
+	x: -18.0d,
+	y: -5.0d,
+	tasks: [{
+		uid: "64c338cc",
+		type: "checkmark",
+		title: "伸出你的手指"
+	}]
+}

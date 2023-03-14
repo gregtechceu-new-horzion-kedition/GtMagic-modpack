@@ -1,0 +1,19 @@
+{
+	title: "橡树不是苹果树",
+	x: 2.0d,
+	y: -7.0d,
+	text: [
+		"--橡树也能长苹果？这不科学！",
+		"--你试着将苹果与橡树结合起来，成功得到了苹果树苗"
+	],
+	dependencies: [
+		"3d211979"
+	],
+	tasks: [{
+		uid: "94cdcf10",
+		type: "item",
+		items: [{
+			item: "harvestcraft:apple_sapling"
+		}]
+	}]
+}

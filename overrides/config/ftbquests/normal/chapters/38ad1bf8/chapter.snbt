@@ -1,0 +1,7 @@
+{
+	title: "1-低压 LV ",
+	icon: "gregtech:meta_plate 1 2",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

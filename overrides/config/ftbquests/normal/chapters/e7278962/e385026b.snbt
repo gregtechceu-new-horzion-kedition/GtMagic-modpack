@@ -1,0 +1,17 @@
+{
+	x: -5.5d,
+	y: -5.0d,
+	dependencies: [
+		"79ca8eaf"
+	],
+	tasks: [{
+		uid: "1553a919",
+		type: "item",
+		items: [{
+			id: "tconstruct:large_plate",
+			tag: {
+				Material: "obsidian"
+			}
+		}]
+	}]
+}

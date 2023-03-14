@@ -1,0 +1,46 @@
+{
+	title: "制作钴黄铜需要准备的",
+	x: -21.0d,
+	y: -15.0d,
+	dependencies: [
+		"fad4e86a"
+	],
+	tasks: [{
+		uid: "b192a3de",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust 1 25"
+		}],
+		count: 9L
+	},
+	{
+		uid: "a82151ab",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust 1 122"
+		}],
+		count: 3L
+	},
+	{
+		uid: "5ae6c955",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust 1 259"
+		}],
+		count: 7L
+	},
+	{
+		uid: "ee7117f1",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust 1 2"
+		}]
+	},
+	{
+		uid: "de3e2cd7",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust 1 23"
+		}]
+	}]
+}

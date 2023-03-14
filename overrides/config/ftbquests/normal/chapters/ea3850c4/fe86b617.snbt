@@ -1,0 +1,22 @@
+{
+	title: "一分收获！",
+	x: 8.0d,
+	y: -6.5d,
+	dependencies: [
+		"1289c0ec"
+	],
+	tasks: [{
+		uid: "bb7c924b",
+		type: "item",
+		items: [{
+			item: "minecraft:carrot"
+		}],
+		count: 10L
+	}],
+	rewards: [{
+		uid: "8c315695",
+		type: "item",
+		item: "minecraft:potato",
+		count: 5
+	}]
+}

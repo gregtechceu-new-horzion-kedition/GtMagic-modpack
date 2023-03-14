@@ -1,0 +1,56 @@
+{
+	x: -7.0d,
+	y: 1.0d,
+	dependencies: [
+		"d19f6173"
+	],
+	tasks: [{
+		uid: "17901ae3",
+		type: "item",
+		items: [{
+			id: "tconstruct:broadsword",
+			tag: {
+				TinkerData: {
+					Materials: [
+						"bronze",
+						"bronze",
+						"bronze"
+					],
+					Modifiers: []
+				},
+				Stats: {
+					Durability: 236,
+					HarvestLevel: 2,
+					Attack: 3.0f,
+					MiningSpeed: 3.0f,
+					AttackSpeedMultiplier: 1.0f,
+					FreeModifiers: 3
+				},
+				StatsOriginal: {
+					Durability: 236,
+					HarvestLevel: 2,
+					Attack: 3.0f,
+					MiningSpeed: 3.0f,
+					AttackSpeedMultiplier: 1.0f,
+					FreeModifiers: 3
+				},
+				Special: {
+					Categories: [
+						"weapon",
+						"tool"
+					]
+				},
+				Modifiers: [{
+					identifier: "dense",
+					color: -1852056,
+					level: 1
+				}],
+				Traits: [
+					"dense"
+				]
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

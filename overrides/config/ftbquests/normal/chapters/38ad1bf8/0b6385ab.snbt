@@ -1,0 +1,14 @@
+{
+	x: -33.5d,
+	y: -9.0d,
+	dependencies: [
+		"f7076f4a"
+	],
+	tasks: [{
+		uid: "1837a379",
+		type: "item",
+		items: [{
+			item: "gregtech:ore_stibnite_0 1 1"
+		}]
+	}]
+}

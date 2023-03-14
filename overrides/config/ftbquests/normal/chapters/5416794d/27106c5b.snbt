@@ -1,0 +1,9 @@
+{
+	x: -4.5d,
+	y: -4.5d,
+	tasks: [{
+		uid: "05f574ac",
+		type: "checkmark",
+		title: "别把你的机器炸了"
+	}]
+}

@@ -1,0 +1,14 @@
+{
+	x: 0.0d,
+	y: -12.5d,
+	dependencies: [
+		"f7076f4a"
+	],
+	tasks: [{
+		uid: "31b185e4",
+		type: "item",
+		items: [{
+			item: "gregtech:ore_certus_quartz_0 1 1"
+		}]
+	}]
+}

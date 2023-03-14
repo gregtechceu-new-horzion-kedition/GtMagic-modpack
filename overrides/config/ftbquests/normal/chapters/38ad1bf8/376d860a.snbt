@@ -1,0 +1,14 @@
+{
+	x: -46.5d,
+	y: -4.0d,
+	dependencies: [
+		"a30645a3"
+	],
+	tasks: [{
+		uid: "cb0be34e",
+		type: "item",
+		items: [{
+			item: "gregtech:ore_glauconite_sand_0"
+		}]
+	}]
+}

@@ -1,0 +1,10 @@
+{
+	x: -8.5d,
+	y: -6.5d,
+	tasks: [{
+		uid: "17236a3c",
+		type: "checkmark",
+		title: "你得自定义一下你的键位",
+		icon: "thaumicaugmentation:button_silverwood"
+	}]
+}

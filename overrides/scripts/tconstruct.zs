@@ -137,8 +137,8 @@ Casting.removeTableRecipe(<ore:ingotAluminum>.firstItem);
 Casting.removeTableRecipe(<ore:ingotAluminium>.firstItem);
 
 //Add Raw Aluminum casting
-Casting.addTableRecipe(<gtnhcore:packresource:21>, <tconstruct:cast_custom>, <liquid:aluminum>, 144);
-Melting.addRecipe(<liquid:aluminum> * 144, <gtnhcore:packresource:21>, 315);
+Casting.addTableRecipe(<gtmagiccoremod:packresource:21>, <tconstruct:cast_custom>, <liquid:aluminum>, 144);
+Melting.addRecipe(<liquid:aluminum> * 144, <gtmagiccoremod:packresource:21>, 315);
 //Casting recipe remove
 Casting.removeTableRecipe(<tconstruct:cast_custom:3>);
 Casting.removeTableRecipe(<tconstruct:cast_custom:4>);

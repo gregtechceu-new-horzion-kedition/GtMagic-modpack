@@ -1,0 +1,14 @@
+{
+	x: -15.5d,
+	y: 8.5d,
+	dependencies: [
+		"0239476f"
+	],
+	tasks: [{
+		uid: "f6e2fbb9",
+		type: "item",
+		items: [{
+			item: "gregtech:ore_magnesite_0"
+		}]
+	}]
+}

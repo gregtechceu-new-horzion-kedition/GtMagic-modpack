@@ -1,0 +1,11 @@
+{
+	x: -7.5d,
+	y: -5.0d,
+	tasks: [{
+		uid: "a7705a01",
+		type: "item",
+		items: [{
+			item: "travelersbackpack:sleeping_bag_bottom"
+		}]
+	}]
+}

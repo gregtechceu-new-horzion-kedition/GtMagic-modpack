@@ -1,0 +1,7 @@
+{
+	title: "蒸汽时代可制作的多方块结构",
+	icon: "gregtech:machine 1 1000",
+	always_invisible: false,
+	group: -416839326,
+	default_quest_shape: "octagon"
+}

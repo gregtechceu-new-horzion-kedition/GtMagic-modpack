@@ -1,0 +1,14 @@
+{
+	x: 5.0d,
+	y: -3.0d,
+	dependencies: [
+		"ddfb30c5"
+	],
+	tasks: [{
+		uid: "23057fbc",
+		type: "item",
+		items: [{
+			item: "minecraft:book"
+		}]
+	}]
+}

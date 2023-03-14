@@ -1,0 +1,11 @@
+{
+	x: -2.0d,
+	y: 0.5d,
+	tasks: [{
+		uid: "058c5a6f",
+		type: "item",
+		items: [{
+			item: "natura:materials 1 3"
+		}]
+	}]
+}

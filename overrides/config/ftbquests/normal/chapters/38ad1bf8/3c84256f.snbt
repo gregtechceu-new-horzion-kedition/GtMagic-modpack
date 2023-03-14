@@ -1,0 +1,15 @@
+{
+	icon: "extrautils2:ingredients 1 6",
+	x: -43.5d,
+	y: 1.0d,
+	dependencies: [
+		"953f2199"
+	],
+	tasks: [{
+		uid: "e0a54369",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_ingot 1 335"
+		}]
+	}]
+}

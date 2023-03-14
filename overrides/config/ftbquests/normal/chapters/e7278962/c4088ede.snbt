@@ -1,0 +1,18 @@
+{
+	x: 11.0d,
+	y: 2.0d,
+	min_required_dependencies: 1,
+	dependencies: [
+		"58ed6475",
+		"ba29ebbe"
+	],
+	dependency_requirement: "one_completed",
+	size: 2.0d,
+	tasks: [{
+		uid: "2a81de68",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_ingot 1 1068"
+		}]
+	}]
+}

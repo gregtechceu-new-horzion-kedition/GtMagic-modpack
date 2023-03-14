@@ -1,0 +1,11 @@
+{
+	x: -27.5d,
+	y: -12.0d,
+	tasks: [{
+		uid: "d589ebfd",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_tool_head_buzz_saw 1 2014"
+		}]
+	}]
+}

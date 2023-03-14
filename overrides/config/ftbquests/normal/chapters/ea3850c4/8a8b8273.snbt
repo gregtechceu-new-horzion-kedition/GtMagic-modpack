@@ -1,0 +1,16 @@
+{
+	x: 4.0d,
+	y: -3.0d,
+	dependencies: [
+		"a8109708"
+	],
+	tasks: [{
+		uid: "cf520bc0",
+		type: "item",
+		items: [{
+			item: "minecraft:stone_sword"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

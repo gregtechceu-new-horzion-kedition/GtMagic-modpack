@@ -1,0 +1,14 @@
+{
+	x: -6.5d,
+	y: -6.5d,
+	text: [
+		"--在你外出探索时，不能让你家里的机器偷偷罢工",
+		"--推荐使用FTBUtilities，先认领区块，再加载区块"
+	],
+	tasks: [{
+		uid: "8253a4e5",
+		type: "checkmark",
+		title: "加载区块",
+		icon: "minecraft:clock"
+	}]
+}

@@ -1,0 +1,29 @@
+{
+	x: -10.0d,
+	y: -17.0d,
+	dependencies: [
+		"a2be0bbf"
+	],
+	optional: true,
+	tasks: [{
+		uid: "63e273ea",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust 1 2524"
+		}]
+	},
+	{
+		uid: "70889085",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust 1 2063"
+		}]
+	},
+	{
+		uid: "72f9d112",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 351"
+		}]
+	}]
+}

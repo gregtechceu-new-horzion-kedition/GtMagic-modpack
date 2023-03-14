@@ -1,0 +1,13 @@
+{
+	title: "7- 零电压 ZPM",
+	icon: {
+		id: "gregtech:meta_item_1",
+		Damage: 752s,
+		tag: {
+			Charge: 2000000000000L
+		}
+	},
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

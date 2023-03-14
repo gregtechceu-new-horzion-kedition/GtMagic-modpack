@@ -1,0 +1,11 @@
+{
+	x: -16.5d,
+	y: -22.0d,
+	tasks: [{
+		uid: "ab948d7f",
+		type: "item",
+		items: [{
+			item: "gregtech:ore_mica_0"
+		}]
+	}]
+}

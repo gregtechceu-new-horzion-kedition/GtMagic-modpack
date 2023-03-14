@@ -1,0 +1,27 @@
+{
+	title: "这是....工作台？",
+	x: 1.0d,
+	y: -5.0d,
+	dependencies: [
+		"ef69e87f"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "c9f29908",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any craftingTableWood"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "craftingTableWood"
+				}
+			}
+		}]
+	}]
+}

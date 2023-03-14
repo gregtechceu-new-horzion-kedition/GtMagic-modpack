@@ -29,7 +29,7 @@ assembler.recipeBuilder()
 
 //Aluminum Raw to ingot
 electric_blast_furnace.recipeBuilder()
-    .inputs(<gtnhcore:packresource:21>)
+    .inputs(<gtmagiccoremod:packresource:21>)
     .circuit(1)
     .outputs(<gregtech:meta_ingot:2>)
     .property("temperature", 1700)

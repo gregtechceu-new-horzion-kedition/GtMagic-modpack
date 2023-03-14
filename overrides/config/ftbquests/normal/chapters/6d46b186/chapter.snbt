@@ -1,0 +1,7 @@
+{
+	title: "0 - 石器时代",
+	icon: "minecraft:stone",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: "octagon"
+}

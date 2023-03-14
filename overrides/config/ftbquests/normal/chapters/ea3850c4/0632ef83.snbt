@@ -1,0 +1,29 @@
+{
+	title: "土豆的三种吃法",
+	x: 8.0d,
+	y: -1.5d,
+	dependencies: [
+		"a0ffc33f"
+	],
+	tasks: [{
+		uid: "66bcead3",
+		type: "item",
+		items: [{
+			item: "minecraft:potato"
+		}]
+	},
+	{
+		uid: "31991f5e",
+		type: "item",
+		items: [{
+			item: "minecraft:baked_potato"
+		}]
+	},
+	{
+		uid: "fd87194e",
+		type: "item",
+		items: [{
+			item: "gregtechfoodoption:gtfo_meta_item 1 42"
+		}]
+	}]
+}

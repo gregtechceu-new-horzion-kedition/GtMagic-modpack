@@ -1,0 +1,30 @@
+{
+	x: -9.0d,
+	y: -3.5d,
+	dependencies: [
+		"d25a9cf6"
+	],
+	tasks: [{
+		uid: "51c2d9e3",
+		type: "item",
+		items: [{
+			id: "gregtech:crowbar",
+			tag: {
+				DisallowContainerItem: 0b,
+				GT.Tool: {
+					Material: "iron",
+					MaxDurability: 256,
+					Durability: 0,
+					ToolSpeed: 6.0f,
+					HarvestLevel: 2,
+					AttackDamage: 4.0f,
+					AttackSpeed: -2.4f
+				},
+				HideFlags: 2,
+				GT.Behaviours: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

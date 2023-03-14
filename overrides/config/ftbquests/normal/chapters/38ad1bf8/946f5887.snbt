@@ -1,0 +1,12 @@
+{
+	x: -28.5d,
+	y: -1.0d,
+	dependencies: [
+		"8273a336"
+	],
+	tasks: [{
+		uid: "4731a285",
+		type: "fluid",
+		fluid: "refinery_gas"
+	}]
+}

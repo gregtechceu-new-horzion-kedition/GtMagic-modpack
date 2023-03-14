@@ -1,0 +1,16 @@
+{
+	x: -21.0d,
+	y: -12.0d,
+	dependencies: [
+		"fad4e86a",
+		"267d2a97"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "fe44aa8f",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_ingot 1 2014"
+		}]
+	}]
+}

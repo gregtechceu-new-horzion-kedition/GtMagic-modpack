@@ -1,0 +1,14 @@
+{
+	x: 0.0d,
+	y: 5.5d,
+	dependencies: [
+		"fec6ea37"
+	],
+	tasks: [{
+		uid: "ff20a5ab",
+		type: "item",
+		items: [{
+			item: "extrautils2:trashcanfluid"
+		}]
+	}]
+}

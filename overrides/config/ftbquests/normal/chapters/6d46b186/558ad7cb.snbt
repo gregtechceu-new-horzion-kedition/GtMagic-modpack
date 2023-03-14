@@ -1,0 +1,16 @@
+{
+	x: 1.0d,
+	y: -5.5d,
+	dependencies: [
+		"969b2511"
+	],
+	tasks: [{
+		uid: "76f8bf5c",
+		type: "item",
+		items: [{
+			item: "spiceoflife:bookfoodjournal"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

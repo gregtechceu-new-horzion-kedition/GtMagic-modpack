@@ -1,0 +1,14 @@
+{
+	x: 6.0d,
+	y: -3.5d,
+	dependencies: [
+		"fb3c8cb0"
+	],
+	tasks: [{
+		uid: "4180d5ad",
+		type: "item",
+		items: [{
+			item: "minecraft:cobblestone"
+		}]
+	}]
+}

@@ -42,9 +42,9 @@ for i, item in infusionItems {
 }
 ArcaneWorkbench.registerShapedRecipe("gauntlet_thaumium", "GAUNTLET_THAUMIUM", 300,
     [<aspect:aer> * 3, <aspect:aqua> * 3, <aspect:ordo> * 3, <aspect:perditio> * 3, <aspect:ignis> * 3, <aspect:terra> * 3], <thaumicaugmentation:gauntlet>.withTag({color: 8022208}), [
-    [<gtnhcore:packresource:4>, <ore:plateThaumium>, <ore:lensSapphire>],
+    [<gtmagiccoremod:packresource:4>, <ore:plateThaumium>, <ore:lensSapphire>],
     [<ore:plateThaumium>, <thaumcraft:caster_basic>, <ore:plateThaumium>],
-    [<ore:ringThaumium>, <ore:plateThaumium>, <gtnhcore:packresource:4>]
+    [<ore:ringThaumium>, <ore:plateThaumium>, <gtmagiccoremod:packresource:4>]
     ]);
 
 Crucible.registerRecipe("effect_provider_power", "GAUNTLET_AUGMENTATION@1",<thaumicaugmentation:augment_builder_effect>.withTag({id: "thaumicaugmentation:effect_power"}), <ore:gemExquisiteRuby>,
@@ -100,7 +100,7 @@ ArcaneWorkbench.registerShapedRecipe("strength_emptiness", "EMPTINESS_MODIFIER",
 
 Infusion.registerRecipe("GAUNTLET_VOID", "GAUNTLET_VOID@1", <thaumicaugmentation:gauntlet:1>.withTag({color: 2498903}), 6,
     [<aspect:alienis> * 75, <aspect:vacuos> * 75, <aspect:potentia> * 50], <thaumicaugmentation:gauntlet:0>,
-    [<thaumcraft:salis_mundus>, <ore:itemEnchantedFabric>, <ore:plateVoid>, <ore:plateVoid>, <gtnhcore:packresource:10>, <thaumcraft:voidseer_charm>, <gtnhcore:packresource:10>, <ore:plateVoid>, <ore:plateVoid>, <ore:itemEnchantedFabric>, <thaumcraft:salis_mundus>, <gregtech:meta_item_1:218>]);
+    [<thaumcraft:salis_mundus>, <ore:itemEnchantedFabric>, <ore:plateVoid>, <ore:plateVoid>, <gtmagiccoremod:packresource:10>, <thaumcraft:voidseer_charm>, <gtmagiccoremod:packresource:10>, <ore:plateVoid>, <ore:plateVoid>, <ore:itemEnchantedFabric>, <thaumcraft:salis_mundus>, <gregtech:meta_item_1:218>]);
 
 ArcaneWorkbench.registerShapedRecipe("glass_tube", "GLASS_TUBE", 20,
     [], <thaumicaugmentation:glass_tube> * 2, [

@@ -7,7 +7,7 @@ recipes.addShaped(<randomthings:floopouch>, [[<ore:screwIron>, <ore:materialClot
 mixer.recipeBuilder()
     .inputs(<ore:dustRedstone>)
     .inputs(<ore:dustEnderPearl>)
-    .outputs(<randomthings:ingredient:7> * 12)
+    .outputs(<randomthings:ingredient:7> * 20)
     .duration(100)
     .EUt(7)
     .buildAndRegister();

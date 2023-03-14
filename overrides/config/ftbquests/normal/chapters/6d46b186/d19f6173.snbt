@@ -1,0 +1,17 @@
+{
+	x: -7.0d,
+	y: 2.5d,
+	dependencies: [
+		"6f51b61e"
+	],
+	tasks: [{
+		uid: "242eee8f",
+		type: "item",
+		items: [{
+			id: "tconstruct:pick_head",
+			tag: {
+				Material: "bronze"
+			}
+		}]
+	}]
+}

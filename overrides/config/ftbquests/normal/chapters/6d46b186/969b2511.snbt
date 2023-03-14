@@ -1,0 +1,17 @@
+{
+	x: 3.0d,
+	y: -3.5d,
+	dependencies: [
+		"a6867019"
+	],
+	size: 3.0d,
+	tasks: [{
+		uid: "fd23f189",
+		type: "item",
+		items: [{
+			item: "spiceoflife:lunchbag"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

@@ -4,7 +4,7 @@ import mods.tconstruct.Melting;
 
 //remove Enderio Recipes
 recipes.removeByMod("enderio");
-recipes.removeByMod("endercore");
+
 furnace.remove(<enderio:item_alloy_ingot:*>);
 
 //JEI

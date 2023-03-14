@@ -1,0 +1,15 @@
+{
+	x: 11.0d,
+	y: -9.0d,
+	dependencies: [
+		"12bd8310"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "f053dcad",
+		type: "item",
+		items: [{
+			item: "minecraft:glass"
+		}]
+	}]
+}

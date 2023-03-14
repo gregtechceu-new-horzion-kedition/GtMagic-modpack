@@ -17,7 +17,7 @@ mixer.recipeBuilder()
 assembler.recipeBuilder()
     .inputs(<ore:gemDiamond>)
     .inputs(<ore:circuitLv> * 4)
-    .outputs(<gtnhcore:packresource:13>)
+    .outputs(<gtmagiccoremod:packresource:13>)
     .duration(200)
     .EUt(32)
     .buildAndRegister();

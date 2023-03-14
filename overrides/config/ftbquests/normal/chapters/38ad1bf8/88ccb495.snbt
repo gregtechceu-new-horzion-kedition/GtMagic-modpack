@@ -1,0 +1,11 @@
+{
+	x: -16.5d,
+	y: 3.0d,
+	tasks: [{
+		uid: "0c5b2021",
+		type: "item",
+		items: [{
+			item: "randomthings:fertilizeddirt"
+		}]
+	}]
+}

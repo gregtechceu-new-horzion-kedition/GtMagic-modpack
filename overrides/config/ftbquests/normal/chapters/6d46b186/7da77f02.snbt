@@ -1,0 +1,14 @@
+{
+	x: -19.0d,
+	y: 0.0d,
+	dependencies: [
+		"d25a9cf6"
+	],
+	tasks: [{
+		uid: "2ddfc816",
+		type: "item",
+		items: [{
+			item: "agricraft:crop_sticks"
+		}]
+	}]
+}

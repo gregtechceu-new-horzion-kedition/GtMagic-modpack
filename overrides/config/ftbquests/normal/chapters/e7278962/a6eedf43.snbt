@@ -1,0 +1,24 @@
+{
+	title: "额外的强化",
+	icon: "tconstruct:materials 1 50",
+	x: 4.0d,
+	y: -7.5d,
+	dependencies: [
+		"ddfb30c5",
+		"541f9e04"
+	],
+	tasks: [{
+		uid: "e77bdb6b",
+		type: "item",
+		items: [{
+			item: "minecraft:diamond"
+		}]
+	},
+	{
+		uid: "5f72da5a",
+		type: "item",
+		items: [{
+			item: "minecraft:gold_block"
+		}]
+	}]
+}

@@ -1,0 +1,11 @@
+{
+	x: 18.0d,
+	y: -16.0d,
+	tasks: [{
+		uid: "3d524e62",
+		type: "item",
+		items: [{
+			item: "gregtech:item_pipe_small 1 259"
+		}]
+	}]
+}

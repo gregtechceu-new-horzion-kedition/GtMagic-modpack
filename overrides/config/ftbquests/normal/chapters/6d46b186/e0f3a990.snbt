@@ -1,0 +1,16 @@
+{
+	x: -16.5d,
+	y: -6.5d,
+	dependencies: [
+		"d25a9cf6"
+	],
+	tasks: [{
+		uid: "db84d9ac",
+		type: "item",
+		items: [{
+			item: "extrautils2:sickle_iron"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

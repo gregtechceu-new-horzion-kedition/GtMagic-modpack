@@ -1,0 +1,15 @@
+{
+	x: -2.0d,
+	y: -1.0d,
+	tasks: [{
+		uid: "2438152e",
+		type: "item",
+		items: [{
+			id: "hotornot:mitts",
+			tag: {
+				Durability: 1000
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

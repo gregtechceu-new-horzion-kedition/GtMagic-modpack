@@ -1,0 +1,58 @@
+{
+	title: "导线？",
+	x: 5.0d,
+	y: 2.0d,
+	dependencies: [
+		"f30f7329",
+		"c4088ede"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "269f9c05",
+		type: "item",
+		items: [{
+			item: "gregtech:wire_single 1 2517"
+		}],
+		count: 3L
+	},
+	{
+		uid: "99570373",
+		type: "item",
+		items: [{
+			item: "gregtech:wire_single 1 112"
+		}],
+		count: 7L
+	},
+	{
+		uid: "f3d57fb1",
+		type: "item",
+		items: [{
+			item: "gregtech:wire_single 1 25"
+		}],
+		count: 24L
+	},
+	{
+		uid: "b0b76032",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_wire_fine 1 25"
+		}],
+		count: 8L
+	},
+	{
+		uid: "15fcf5ff",
+		type: "item",
+		items: [{
+			item: "gregtech:cable_single 1 2517"
+		}],
+		count: 3L
+	},
+	{
+		uid: "58c72793",
+		type: "item",
+		items: [{
+			item: "gregtech:cable_single 1 112"
+		}],
+		count: 7L
+	}]
+}

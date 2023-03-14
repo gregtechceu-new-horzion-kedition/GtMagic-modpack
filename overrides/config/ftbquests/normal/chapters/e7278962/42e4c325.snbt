@@ -1,0 +1,23 @@
+{
+	title: "冷酷的家伙",
+	icon: "minecraft:snowball",
+	x: 6.0d,
+	y: -7.5d,
+	dependencies: [
+		"ddfb30c5"
+	],
+	tasks: [{
+		uid: "62cc74f4",
+		type: "item",
+		items: [{
+			item: "minecraft:snow"
+		}]
+	},
+	{
+		uid: "3cbf675d",
+		type: "item",
+		items: [{
+			item: "minecraft:pumpkin"
+		}]
+	}]
+}

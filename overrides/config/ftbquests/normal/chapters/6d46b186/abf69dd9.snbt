@@ -1,0 +1,14 @@
+{
+	x: 8.0d,
+	y: 1.0d,
+	dependencies: [
+		"1073ff7c"
+	],
+	tasks: [{
+		uid: "66dc0c04",
+		type: "item",
+		items: [{
+			item: "natura:redwood_sapling"
+		}]
+	}]
+}

@@ -1,0 +1,12 @@
+{
+	x: -49.0d,
+	y: -6.5d,
+	dependencies: [
+		"1036d9b0"
+	],
+	tasks: [{
+		uid: "ffed64d4",
+		type: "fluid",
+		fluid: "chlorine"
+	}]
+}

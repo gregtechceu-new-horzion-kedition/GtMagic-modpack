@@ -462,7 +462,7 @@ extruder.recipeBuilder()
 //wafer basic
 laser_engraver.recipeBuilder()
     .inputs(<gregtech:meta_item_1:371>)
-    .notConsumable(<gtnhcore:packresource:8>)
+    .notConsumable(<gtmagiccoremod:packresource:8>)
     .outputs(<galacticraftcore:basic_item:13>)
     .duration(200)
     .EUt(256)
@@ -471,7 +471,7 @@ laser_engraver.recipeBuilder()
 //wafer advanced
 laser_engraver.recipeBuilder()
     .inputs(<gregtech:meta_item_1:372>)
-    .notConsumable(<gtnhcore:packresource:8>)
+    .notConsumable(<gtmagiccoremod:packresource:8>)
     .outputs(<galacticraftcore:basic_item:14>)
     .property("cleanroom", "cleanroom")
     .duration(200)
@@ -518,7 +518,7 @@ recipes.addShaped(<galacticraftcore:sensor_glasses>, [[<ore:circuitEv>, <ore:scr
 
 //sensor lens
 recipes.remove(<galacticraftcore:sensor_lens>);
-recipes.addShaped(<galacticraftcore:sensor_lens>, [[<ore:ringRedAlloy>, <ore:lensDiamond>, <ore:ringRedAlloy>],[<ore:circuitHv>, <gtnhcore:packresource:8>, <ore:circuitHv>], [<ore:screwStainlessSteel>, <ore:gtceScrewdrivers>, <ore:screwStainlessSteel>]]);
+recipes.addShaped(<galacticraftcore:sensor_lens>, [[<ore:ringRedAlloy>, <ore:lensDiamond>, <ore:ringRedAlloy>],[<ore:circuitHv>, <gtmagiccoremod:packresource:8>, <ore:circuitHv>], [<ore:screwStainlessSteel>, <ore:gtceScrewdrivers>, <ore:screwStainlessSteel>]]);
 
 //magnetic table
 recipes.remove(<galacticraftcore:magnetic_table>);
@@ -569,7 +569,7 @@ recipes.remove(<galacticraftcore:fluid_tank>);
 recipes.remove(<galacticraftcore:oxygen_mask>);
 assembler.recipeBuilder()
     .inputs(<galacticraftcore:steel_helmet>)
-    .inputs(<gtnhcore:packresource:9> * 16)
+    .inputs(<gtmagiccoremod:packresource:9> * 16)
     .fluidInputs(<liquid:silicone_rubber> * 72)
     .outputs(<galacticraftcore:oxygen_mask>)
     .duration(400)
@@ -610,8 +610,8 @@ recipes.remove(<galacticraftplanets:asteroids_block:7>);
 
 //nasa workbench
 recipes.remove(<galacticraftcore:rocket_workbench>);
-recipes.addShaped(<gtnhcore:packresource:20>, [[<ore:plateNetherStar>, <ore:plateNetherStar>, <galacticraftcore:sensor_lens>],[<gregtech:meta_item_1:129>, <ore:stickLongStainlessSteel>, <gregtech:meta_item_1:189>], [<gregtech:meta_item_1:174>, <ore:circuitEv>, <ore:stickLongStainlessSteel>]]);
-recipes.addShaped(<galacticraftcore:rocket_workbench>, [[<gtnhcore:packresource:20>, <gtnhcore:packresource:20>, <gtnhcore:packresource:20>],[<ore:circuitIv>, <gregtech:meta_item_1:465>, <ore:circuitIv>], [<ore:frameGtStainlessSteel>, <gregtech:machine:112>, <ore:frameGtStainlessSteel>]]);
+recipes.addShaped(<gtmagiccoremod:packresource:20>, [[<ore:plateNetherStar>, <ore:plateNetherStar>, <galacticraftcore:sensor_lens>],[<gregtech:meta_item_1:129>, <ore:stickLongStainlessSteel>, <gregtech:meta_item_1:189>], [<gregtech:meta_item_1:174>, <ore:circuitEv>, <ore:stickLongStainlessSteel>]]);
+recipes.addShaped(<galacticraftcore:rocket_workbench>, [[<gtmagiccoremod:packresource:20>, <gtmagiccoremod:packresource:20>, <gtmagiccoremod:packresource:20>],[<ore:circuitIv>, <gregtech:meta_item_1:465>, <ore:circuitIv>], [<ore:frameGtStainlessSteel>, <gregtech:machine:112>, <ore:frameGtStainlessSteel>]]);
 
 //remove refinery
 recipes.remove(<galacticraftcore:refinery>);

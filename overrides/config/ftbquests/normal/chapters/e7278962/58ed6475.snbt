@@ -1,0 +1,17 @@
+{
+	title: "如何制作橡胶",
+	x: 11.0d,
+	y: -1.0d,
+	dependencies: [
+		"749d90dc",
+		"e2747b71"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "848c9e32",
+		type: "item",
+		items: [{
+			item: "gregtech:ore_sulfur_0 1 1"
+		}]
+	}]
+}

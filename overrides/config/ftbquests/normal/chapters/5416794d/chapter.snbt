@@ -1,0 +1,7 @@
+{
+	title: "刚开始游玩时，一些你需要注意的",
+	icon: "minecraft:book",
+	always_invisible: false,
+	group: -365408060,
+	default_quest_shape: "circle"
+}

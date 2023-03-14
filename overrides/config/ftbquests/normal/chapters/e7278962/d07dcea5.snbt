@@ -1,0 +1,17 @@
+{
+	x: -3.0d,
+	y: -1.0d,
+	dependencies: [
+		"e5f03659"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "4c53e0a5",
+		type: "item",
+		items: [{
+			item: "minecraft:flint_and_steel"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

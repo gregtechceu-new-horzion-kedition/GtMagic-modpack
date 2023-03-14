@@ -1,0 +1,13 @@
+{
+	x: -6.0d,
+	y: -6.5d,
+	tasks: [{
+		uid: "0d6c35f2",
+		type: "item",
+		items: [{
+			item: "forestry:forester_bag"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

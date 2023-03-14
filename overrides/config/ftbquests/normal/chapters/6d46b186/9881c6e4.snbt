@@ -1,0 +1,56 @@
+{
+	x: -5.5d,
+	y: 1.5d,
+	dependencies: [
+		"d19f6173"
+	],
+	tasks: [{
+		uid: "9ccad6d7",
+		type: "item",
+		items: [{
+			id: "tconstruct:rapier",
+			tag: {
+				TinkerData: {
+					Materials: [
+						"bronze",
+						"bronze",
+						"bronze"
+					],
+					Modifiers: []
+				},
+				Stats: {
+					Durability: 172,
+					HarvestLevel: 2,
+					Attack: 2.0f,
+					MiningSpeed: 3.0f,
+					AttackSpeedMultiplier: 1.0f,
+					FreeModifiers: 3
+				},
+				StatsOriginal: {
+					Durability: 172,
+					HarvestLevel: 2,
+					Attack: 2.0f,
+					MiningSpeed: 3.0f,
+					AttackSpeedMultiplier: 1.0f,
+					FreeModifiers: 3
+				},
+				Special: {
+					Categories: [
+						"weapon",
+						"tool"
+					]
+				},
+				Modifiers: [{
+					identifier: "dense",
+					color: -1852056,
+					level: 1
+				}],
+				Traits: [
+					"dense"
+				]
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

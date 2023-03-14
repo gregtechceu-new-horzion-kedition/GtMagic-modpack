@@ -1,0 +1,17 @@
+{
+	title: "铁盾",
+	x: -12.0d,
+	y: -6.5d,
+	dependencies: [
+		"d25a9cf6"
+	],
+	tasks: [{
+		uid: "cf515240",
+		type: "item",
+		items: [{
+			item: "mujmajnkraftsbettersurvival:itemsmallshield"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

@@ -1,0 +1,9 @@
+{
+	x: -11.0d,
+	y: -24.0d,
+	tasks: [{
+		uid: "566c0831",
+		type: "fluid",
+		fluid: "benzene"
+	}]
+}

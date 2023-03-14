@@ -1,0 +1,12 @@
+{
+	x: -8.5d,
+	y: -4.5d,
+	tasks: [{
+		uid: "24b4468c",
+		type: "stat",
+		title: "记住，定时备份存档",
+		icon: "minecraft:bookshelf",
+		stat: "stat.playOneMinute",
+		value: 10
+	}]
+}

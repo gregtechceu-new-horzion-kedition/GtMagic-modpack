@@ -1,0 +1,31 @@
+{
+	x: -11.5d,
+	y: -2.0d,
+	dependencies: [
+		"6c00a7ad"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "9d60a863",
+		type: "item",
+		items: [{
+			id: "gregtech:wrench",
+			tag: {
+				DisallowContainerItem: 0b,
+				GT.Tool: {
+					Material: "iron",
+					MaxDurability: 256,
+					Durability: 0,
+					ToolSpeed: 6.0f,
+					HarvestLevel: 2,
+					AttackDamage: 3.0f,
+					AttackSpeed: -2.8f
+				},
+				HideFlags: 2,
+				GT.Behaviours: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

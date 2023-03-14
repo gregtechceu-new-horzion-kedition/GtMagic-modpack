@@ -1,0 +1,30 @@
+{
+	x: 1.0d,
+	y: -9.5d,
+	dependencies: [
+		"541f9e04"
+	],
+	tasks: [{
+		uid: "954dd12e",
+		type: "item",
+		items: [{
+			id: "gregtech:hammer",
+			tag: {
+				DisallowContainerItem: 0b,
+				GT.Tool: {
+					Material: "diamond",
+					MaxDurability: 768,
+					Durability: 0,
+					ToolSpeed: 10.0f,
+					HarvestLevel: 3,
+					AttackDamage: 8.0f,
+					AttackSpeed: -2.7f
+				},
+				HideFlags: 2,
+				GT.Behaviours: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

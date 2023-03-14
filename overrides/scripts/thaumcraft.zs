@@ -348,16 +348,16 @@ mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:mirror>);
 mods.thaumcraft.Infusion.registerRecipe("mirror", "MIRROR", <thaumcraft:mirror>, 12, 
 	[<aspect:motus> *32, <aspect:permutatio> *24, <aspect:tenebrae> *16, <aspect:alienis> *8], 
 	<thaumcraft:mirrored_glass>, 
-	[<ore:plateEnderEye>, <ore:screwStainlessSteel>, <ore:plateGold>, <ore:screwStainlessSteel>, <ore:plateEnderEye>, 
-	<ore:screwStainlessSteel>, <ore:plateGold>, <ore:screwStainlessSteel>]);
+	[<ore:plateEnderEye>, <ore:screwThaumium>, <ore:plateGold>, <ore:screwThaumium>, <ore:plateEnderEye>, 
+	<ore:screwThaumium>, <ore:plateGold>, <ore:screwThaumium>]);
 	
 // Essentia Mirror
 mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:mirror_essentia>);
 mods.thaumcraft.Infusion.registerRecipe("mirror_essentia", "MIRRORESSENTIA", <thaumcraft:mirror_essentia>, 8, 
 	[<aspect:motus> *32, <aspect:aqua> *24, <aspect:permutatio> *16, <aspect:vitreus> *8], 
 	<thaumcraft:mirrored_glass>, 
-	[<ore:plateEnderEye>, <ore:screwStainlessSteel>, <ore:plateSteel>, <ore:screwStainlessSteel>, <ore:plateEnderEye>, 
-	<ore:screwStainlessSteel>, <ore:plateSteel>, <ore:screwStainlessSteel>]);
+	[<ore:plateEnderEye>, <ore:screwThaumium>, <ore:plateSteel>, <ore:screwThaumium>, <ore:plateEnderEye>, 
+	<ore:screwThaumium>, <ore:plateSteel>, <ore:screwThaumium>]);
 
 // Filling Essentia Transfuser
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:essentia_input>);
@@ -504,11 +504,13 @@ mods.thaumcraft.Infusion.registerRecipe("causalityCollapser", "RIFTCLOSER", <tha
 
 // Thaumometer
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:thaumometer>);
-recipes.addShaped(<thaumcraft:thaumometer>, 
-	[[<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]}), <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}), <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]})],
-	[<ore:plateGold>, <ore:lensDiamond>, <ore:plateGold>],
-	[<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]}), <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]}), <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]})]]);
-	
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumometer", "FIRSTSTEPS@2", 200,
+    [<aspect:aer> * 1, <aspect:aqua> * 1, <aspect:ordo> *1, <aspect:perditio> * 1, <aspect:ignis> * 1, <aspect:terra> * 2], <thaumcraft:thaumometer>, [
+    [<ore:screwGold>, <ore:plateGold>, <ore:screwGold>],
+    [<ore:plateGold>, <ore:lensDiamond>, <ore:plateGold>],
+    [<ore:screwGold>, <ore:plateGold>, <ore:screwGold>]
+    ]);
+
 // Essentia Resonator
 mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:resonator>);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("resonator", "TUBES",  30, 
@@ -523,8 +525,8 @@ mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:sanity_checker>);
 mods.thaumcraft.Infusion.registerRecipe("sanity_checker", "", <thaumcraft:sanity_checker>, 14, 
 	[<aspect:cognitio> *32, <aspect:sensus> *24, <aspect:alienis> *16, <aspect:alkimia> *16], 
 	<thaumcraft:thaumometer>, 
-	[<thaumcraft:mirror>, <ore:screwStainlessSteel>, <thaumcraft:brain>, <ore:screwStainlessSteel>, <ore:gemFlawlessDiamond>, 
-	<ore:screwStainlessSteel>, <thaumcraft:brain>, <ore:screwStainlessSteel>]);
+	[<thaumcraft:mirror>, <ore:screwThaumium>, <thaumcraft:brain>, <ore:screwThaumium>, <ore:gemFlawlessDiamond>, 
+	<ore:screwThaumium>, <thaumcraft:brain>, <ore:screwThaumium>]);
 	
 // Magic Hand Mirror
 mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:hand_mirror>);
@@ -933,7 +935,7 @@ mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:focus_2>);
 mods.thaumcraft.Infusion.registerRecipe("blank_advanced_focus", "FOCUSADVANCED", <thaumcraft:focus_2>, 14, 
 	[<aspect:potentia> *64, <aspect:praecantatio> *64, <aspect:auram> *32], 
 	<minecraft:nether_star>, 
-	[<bloodmagic:slate:1>, <ore:plateStainlessSteel>, <bloodmagic:slate:1>, <ore:plateStainlessSteel>, <bloodmagic:slate:1>, <ore:plateStainlessSteel>, <bloodmagic:slate:1>, <ore:plateStainlessSteel>]);
+	[<ore:quicksilver>, <ore:plateStainlessSteel>, <ore:gemExquisiteDiamond>, <ore:plateStainlessSteel>, <ore:quicksilver>, <ore:plateStainlessSteel>, <ore:enderpearl>, <ore:plateStainlessSteel>]);
 	
 // Blank Greater Focus
 mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:focus_3>);

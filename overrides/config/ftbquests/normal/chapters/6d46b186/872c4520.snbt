@@ -1,0 +1,27 @@
+{
+	x: -21.0d,
+	y: -3.0d,
+	dependencies: [
+		"4c9f1311"
+	],
+	tasks: [{
+		uid: "dcadb181",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any craftingToolButcheryKnife"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "craftingToolButcheryKnife"
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

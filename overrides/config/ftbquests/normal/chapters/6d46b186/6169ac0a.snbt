@@ -1,0 +1,25 @@
+{
+	x: -6.0d,
+	y: 8.5d,
+	dependencies: [
+		"b867104a"
+	],
+	tasks: [{
+		uid: "ab3602aa",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any oreIron"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "oreIron"
+				}
+			}
+		}]
+	}]
+}

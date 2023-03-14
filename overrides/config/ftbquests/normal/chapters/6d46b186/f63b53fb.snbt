@@ -1,0 +1,13 @@
+{
+	title: "天铜地铁",
+	icon: "thaumcraft:metal_brass",
+	x: -4.5d,
+	y: 8.5d,
+	dependencies: [
+		"6032fec1"
+	],
+	tasks: [{
+		uid: "2e794cfa",
+		type: "checkmark"
+	}]
+}
